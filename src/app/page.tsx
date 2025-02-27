@@ -1,3 +1,5 @@
+import ServiceCard from "@/components/ServiceCard";
+import { servicesItems } from "@/constants/servicesItems";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -5,7 +7,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="bg-gradient-to-b from-green-50 to-cyan-50 flex items-center justify-center pt-2 md:p-section lg:pt-20">
+      <section className="bg-gradient-to-b from-green-50 to-cyan-50 flex items-center justify-center pt-2 md:p-md lg:pt-20">
         <div className="container mx-auto max-w-6xl flex flex-col px-4 items-center md:flex-row gap-8 pt-16 lg:px-6">
           <Image
             src="/assets/hero-img.jpg"
@@ -18,131 +20,153 @@ export default function Home() {
             <h3 className="h3-custom">
               Holistic Well-being Through Movement and Touch
             </h3>
-            <h1 className="h1-custom my-6">Life In a Heathy Body</h1>
+            <h1 className="h1-custom">Life In a Heathy Body</h1>
             <p className="p-custom">
               I combine expert massage therapy with guided Nordic walking
               sessions to create a complete wellness experience, tailored to
               your body’s unique needs.
             </p>
             <div className="my-6 flex flex-col sm:flex-row space-x-0 sm:space-x-2 gap-2">
-              <button className="primary-btn">Learn more</button>
-              <button className="secondary-btn">
+              <Link href="#" className="primary-btn">
+                Learn more
+              </Link>
+              <Link href="#" className="secondary-btn">
                 Book a free consultation
-              </button>
+              </Link>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       {/* Services Section */}
-      <section className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-800 mb-6">
-          Tailored to fit your needs
-        </h2>
+      <section className="mb-12 p-sm md:p-md lg:px-lg">
+        <h3 className="h3-custom">Services</h3>
+        <h2 className="h2-custom">Tailored to fit your needs</h2>
         <div className="grid md:grid-cols-3 gap-6">
-          <ServiceCard
-            title="Massage Therapy"
-            image="/assets/massage.jpg"
-            description="Body text for whatever you'd like to add more to the subheading."
-          />
-          <ServiceCard
-            title="Personalized Approach"
-            image="/assets/individual-training.jpg"
-            description="Body text for whatever you'd like to expand on the main point."
-          />
-          <ServiceCard
-            title="Group Trainings"
-            image="/assets/nordic-walking.jpg"
-            description="Body text for whatever you'd like to share more."
-          />
+          {servicesItems.map((item, index) => (
+            <ServiceCard
+              key={index}
+              title={item.title}
+              imageUrl={item.imageUrl}
+              description={item.description}
+            />
+          ))}
         </div>
       </section>
-
       {/* Massage Experience Section */}
-      <section className="bg-blue-100 p-12 rounded-lg">
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">
-          Experience the Healing Power of Massage
-        </h2>
-        <p className="text-gray-700 mb-6">
-          Our massage services are designed to rejuvenate your body and mind.
-          Whether you’re seeking relaxation or relief from tension, we tailor
-          each session to meet your unique needs.
-        </p>
-        <div className="flex space-x-4 mb-6">
-          <Link
-            href="#"
-            className="bg-green-500 text-white px-6 py-2 rounded-md"
-          >
-            Book now
-          </Link>
-          <Link
-            href="#"
-            className="border border-green-500 text-green-500 px-6 py-2 rounded-md"
-          >
-            Learn More
-          </Link>
-        </div>
-        <Image
-          src="/assets/massage-therapy.jpg"
-          width={800}
-          height={500}
-          alt="Massage"
-          className="rounded-lg"
-        />
-      </section>
-
-      <div className="bg-white text-gray-900">
-        <div className="p-8 text-center">
-          <h2 className="text-4xl font-bold">
-            Transform Your Posture, Transform Your Life
-          </h2>
-          <p className="mt-4">
-            Our posture correction classes are designed to enhance your
-            alignment and overall wellness.
-          </p>
-        </div>
-
-        <section className="flex flex-col md:flex-row items-center p-8 bg-gray-100">
-          <div className="md:w-1/2 p-4">
-            <h2 className="text-2xl font-semibold">Expert Guidance</h2>
-            <p>
-              Learn techniques that promote better posture and reduce discomfort
-              in daily activities.
-            </p>
-            <button className="mt-4 px-4 py-2 bg-green-600 text-white rounded-lg">
-              Book a free consultation
-            </button>
+      <section className="bg-bgBlue p-sm md:p-md lg:p-lg">
+        <div className="flex flex-col md:flex-row py-sm lg:gap-5">
+          <div className="w-full">
+            <h3 className="h3-custom">Revitalize</h3>
+            <h2 className="h2-custom">
+              Experience the Healing Power of Massage
+            </h2>
           </div>
-          <div className="md:w-1/2">
-            <img
-              src="/posture-correction.jpg"
+          <div className="w-full">
+            <p className="p-custom mb-6">
+              Our massage services are designed to rejuvenate your body and
+              mind. Whether you’re seeking relaxation or relief from tension, we
+              tailor each session to meet your unique needs.
+            </p>
+            <div className="my-6 flex flex-col sm:flex-row space-x-0 sm:space-x-2 gap-2 text-center md:text-left">
+              <Link href="#" className="secondary-btn">
+                Learn more
+              </Link>
+              <Link href="#" className="primary-btn">
+                Book Now
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="w-full relative min-h-[400px] md:min-h-[400px] lg:min-h-[600px]">
+          <Image
+            src="/assets/massage-therapy.jpg"
+            alt="Massage"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-lg"
+          />
+        </div>
+      </section>
+      {/* Posture Correction Section */}
+      <section className="bg-bgBase p-sm md:p-md lg:p-lg">
+        <div className="flex flex-col md:flex-row py-sm">
+          <div className="md:w-2/3 pr-sm">
+            <h3 className="h3-custom">Balance</h3>
+            <h2 className="h2-custom">
+              Transform Your Posture, Transform Your Life
+            </h2>
+            <p className="p-custom mt-4">
+              Our posture correction classes are designed to enhance your
+              alignment and overall wellness.
+            </p>
+            <div className="flex flex-col md:flex-row py-4">
+              <div className="md:w-1/2 mr-4">
+                <h4 className="h4-custom">Expert Guidance</h4>
+                <p className="p-custom mt-2">
+                  Learn techniques that promote better posture and reduce
+                  discomfort in daily activities.
+                </p>
+              </div>
+              <div className="md:w-1/2">
+                <h4 className="h4-custom">Join Us</h4>
+                <p className="p-custom mt-2">
+                  Connect with a community focused on improving health and
+                  well-being through movement.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col my-4 sm:flex-row space-x-0 sm:space-x-2 gap-2 text-center md:text-left">
+              <Link href="#" className="secondary-btn">
+                Learn more
+              </Link>
+              <Link href="#" className="primary-btn">
+                Book a Free Consultation
+              </Link>
+            </div>
+          </div>
+          <div className="w-full md:w-1/3 relative min-h-[200px] md:min-h-[400px]">
+            <Image
+              src="/assets/posture-correction.jpg"
               alt="Posture correction"
+              layout="fill"
+              objectFit="cover"
               className="rounded-lg"
             />
           </div>
-        </section>
-
-        <section className="flex flex-col md:flex-row-reverse items-center p-8 bg-green-50">
-          <div className="md:w-1/2 p-4">
-            <h2 className="text-2xl font-semibold">
-              Discover the Joy of Nordic Walking
-            </h2>
-            <p>
+        </div>
+      </section>
+      {/* Nordic Walking Section */}
+      <section className="bg-bgGreen p-sm md:p-md lg:p-lg">
+        <div className="flex flex-col md:flex-row py-sm">
+          <div className="md:w-2/3">
+            <h3 className="h3-custom">Move</h3>
+            <h2 className="h2-custom">Discover the Joy of Nordic Walking</h2>
+            <p className="p-custom">
               Join our Nordic walking groups to enhance your fitness and
               well-being.
             </p>
-            <button className="mt-4 px-4 py-2 bg-green-600 text-white rounded-lg">
-              Join now
-            </button>
+            <div className="flex flex-col my-4 sm:flex-row space-x-0 sm:space-x-2 gap-2 text-center md:text-left">
+              <Link href="#" className="secondary-btn">
+                Learn more
+              </Link>
+              <Link href="#" className="primary-btn">
+                Join Now
+              </Link>
+            </div>
           </div>
-          <div className="md:w-1/2">
-            <img
-              src="/nordic-walking.jpg"
-              alt="Nordic walking group"
+          <div className="w-full md:w-1/3 relative min-h-[200px] md:min-h-[400px]">
+            <Image
+              src="/assets/nordic-walking.jpg"
+              alt="Posture correction"
+              layout="fill"
+              objectFit="cover"
               className="rounded-lg"
             />
           </div>
-        </section>
+        </div>
+      </section>
 
+      <div className="bg-white text-gray-900">
         <section className="p-8 bg-white">
           <h2 className="text-2xl font-bold text-center">
             Real Stories, Real Results
@@ -175,22 +199,6 @@ export default function Home() {
           </p>
         </footer>
       </div>
-    </div>
-  );
-}
-
-function ServiceCard({ title, image, description }) {
-  return (
-    <div className="bg-white p-4 shadow-md rounded-lg">
-      <Image
-        src={image}
-        width={300}
-        height={200}
-        alt={title}
-        className="rounded-md"
-      />
-      <h3 className="text-xl font-semibold mt-4">{title}</h3>
-      <p className="text-gray-600 mt-2">{description}</p>
     </div>
   );
 }

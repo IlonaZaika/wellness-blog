@@ -20,7 +20,9 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 w-full max-w-screen px-6 py-4 z-50 lg:px-12 ${
-        isScrolled ? "bg-white" : "bg-transparent border border-b-white"
+        isScrolled
+          ? "bg-white border border-b-accent"
+          : "bg-transparent border border-b-white"
       }`}
     >
       <div className="container mx-auto flex items-center justify-between ">

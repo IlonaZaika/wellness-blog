@@ -26,6 +26,7 @@ export default {
         light: "300",
         regular: "400",
         medium: "500",
+        bold: "700",
       },
       letterSpacing: {
         wide: "0.05em",
@@ -35,7 +36,9 @@ export default {
         p: "150%",
       },
       spacing: {
-        section: "64px",
+        sm: "16px",
+        md: "64px",
+        lg: "112px",
       },
     },
   },
