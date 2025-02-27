@@ -17,11 +17,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <head>
+    <html>
+      <head lang="en" className={`${inter.className}`}>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body>
+      <body className={`${rokkitt.className}`}>
         <Navbar />
         <main>{children}</main>
         {/* <Footer></Footer> */}
