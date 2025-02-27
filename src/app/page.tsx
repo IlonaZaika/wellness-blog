@@ -10,7 +10,7 @@ export default function Home() {
       <section className="bg-gradient-to-b from-green-50 to-cyan-50 flex items-center justify-center pt-2 md:p-md lg:pt-20">
         <div className="container mx-auto max-w-6xl flex flex-col px-4 items-center md:flex-row gap-8 pt-16 lg:px-6">
           <Image
-            src="/assets/hero-img.jpg"
+            src="/hero-img.jpg"
             alt="Wellness"
             className="rounded-lg w-3/5 h-3/5"
             width={400}
@@ -79,7 +79,7 @@ export default function Home() {
         </div>
         <div className="w-full relative min-h-[200px] md:min-h-[400px] lg:min-h-[600px]">
           <Image
-            src="/assets/massage-therapy.jpg"
+            src="/massage-therapy.jpg"
             alt="Massage"
             layout="fill"
             objectFit="cover"
@@ -115,7 +115,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col my-4 sm:flex-row space-x-0 sm:space-x-2 gap-2 text-center md:text-left">
+            <div className="flex flex-col my-4 sm:flex-row space-x-0 sm:space-x-2 text-center md:text-left md:mt-sm">
               <Link href="#" className="secondary-btn">
                 Learn more
               </Link>
@@ -126,7 +126,7 @@ export default function Home() {
           </div>
           <div className="w-full md:w-1/3 relative min-h-[200px] md:min-h-[400px]">
             <Image
-              src="/assets/posture-correction.jpg"
+              src="/posture-correction.jpg"
               alt="Posture correction"
               layout="fill"
               objectFit="cover"
@@ -145,7 +145,7 @@ export default function Home() {
               Join our Nordic walking groups to enhance your fitness and
               well-being.
             </p>
-            <div className="flex flex-col my-4 sm:flex-row space-x-0 sm:space-x-2 gap-2 text-center md:text-left">
+            <div className="flex flex-col my-4 sm:flex-row space-x-0 sm:space-x-2 text-center md:text-left md:mt-sm">
               <Link href="#" className="secondary-btn">
                 Learn more
               </Link>
@@ -156,7 +156,7 @@ export default function Home() {
           </div>
           <div className="md:w-1/2 relative min-h-[200px] md:min-h-[400px]">
             <Image
-              src="/assets/nordic-walking.jpg"
+              src="/nordic-walking.jpg"
               alt="Posture correction"
               layout="fill"
               objectFit="cover"
