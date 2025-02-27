@@ -53,7 +53,7 @@ export default function Home() {
         </div>
       </section>
       {/* Massage Experience Section */}
-      <section className="bg-bgBlue p-sm md:p-md lg:p-lg">
+      <section className="bg-bgBlue p-sm md:p-md lg:px-lg">
         <div className="flex flex-col md:flex-row py-sm lg:gap-5">
           <div className="w-full">
             <h3 className="h3-custom">Revitalize</h3>
@@ -88,7 +88,7 @@ export default function Home() {
         </div>
       </section>
       {/* Posture Correction Section */}
-      <section className="bg-bgBase p-sm md:p-md lg:p-lg">
+      <section className="bg-bgBase p-sm md:p-md lg:px-lg">
         <div className="flex flex-col md:flex-row py-sm">
           <div className="md:w-2/3 pr-sm">
             <h3 className="h3-custom">Balance</h3>
@@ -136,7 +136,7 @@ export default function Home() {
         </div>
       </section>
       {/* Nordic Walking Section */}
-      <section className="bg-bgGreen p-sm md:p-md lg:p-lg">
+      <section className="bg-bgGreen p-sm md:p-md lg:px-lg">
         <div className="flex flex-col md:flex-row py-sm">
           <div className="md:w-1/2 pr-sm">
             <h3 className="h3-custom">Move</h3>

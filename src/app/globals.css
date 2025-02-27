@@ -39,11 +39,11 @@ h6 {
 }
 
 .h1-custom {
-  @apply font-medium text-[38px] sm:text-[48px] md:text-[56px] leading-[120%] my-6;
+  @apply font-heading font-medium text-[38px] sm:text-[48px] md:text-[56px] leading-[120%] my-6;
 }
 
 .h2-custom {
-  @apply text-[32px] sm:text-[32px] md:text-[40px] leading-[120%] my-6;
+  @apply font-heading text-[32px] sm:text-[32px] md:text-[40px] leading-[120%] my-6;
 }
 
 .h3-custom {
@@ -55,7 +55,7 @@ h6 {
 }
 
 .p-custom {
-  @apply text-[14px] sm:text-[16px] md:text-[16px] font-light leading-[150%] text-textGrey;
+  @apply font-inter text-[14px] sm:text-[16px] md:text-[16px] font-light leading-[150%] text-textGrey;
 }
 
 .primary-btn {
