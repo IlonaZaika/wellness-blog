@@ -3,19 +3,61 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-background: #f1f4ee;
+  --color-background-blue: #e6f5f6;
+  --color-background-green: #eef7d5;
+  --color-accent: #789d32;
+  --color-button-hover-bg: #7a9841;
+  --color-text-green: #344536;
+  --color-text-grey: #545a51;
+  --color-text-light: #ededed;
+  --height-nav-button: 40px;
+  --font-size-navigation: 12px;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 640px) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --height-nav-button: 44px;
+    --font-size-navigation: 13px;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-text);
+  background: white;
+  @apply font-inter text-[14px] sm:text-[16px] md:text-[18px];
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-heading;
+  @apply text-textGreen;
+}
+
+.h1-custom {
+  @apply font-medium text-[40px] sm:text-[48px] md:text-[56px] leading-[120%];
+}
+
+.h2-custom {
+  @apply text-[32px] sm:text-[40px] md:text-[48px] leading-[120%];
+}
+
+.h3-custom {
+  @apply font-inter font-light text-[14px] sm:text-[16px] md:text-[16px] leading-[120%] uppercase;
+}
+
+.p-custom {
+  @apply text-[14px] sm:text-[16px] md:text-[16px] font-light leading-[150%];
+}
+
+.primary-btn {
+  @apply font-inter font-light bg-accent text-bgLight rounded-lg hover:bg-btnHoveredGreen px-4 sm:px-6 py-2  text-[14px] sm:text-[16px];
+}
+
+.secondary-btn {
+  @apply font-inter font-light border border-accent text-accent rounded-lg hover:bg-accent hover:text-bgLight px-4 sm:px-6 py-2  text-[14px] sm:text-[16px];
 }

@@ -1,101 +1,196 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <div className="bg-gradient-to-b from-green-50 to-cyan-100 flex items-center justify-center pt-28 sm:p-section">
+        <div className=" container mx-auto px-4 sm:px-6 lg:px-6 max-w-6xl flex flex-col md:flex-row items-center gap-8 md:py-16">
+          <Image
+            src="/assets/hero-img.jpg"
+            alt="Wellness"
+            className="rounded-lg w-3/5 h-3/5"
+            width={400}
+            height={400}
+          />
+          <div>
+            <h3 className="h3-custom">
+              Holistic Well-being Through Movement and Touch
+            </h3>
+            <h1 className="h1-custom my-6">Life In a Heathy Body</h1>
+            <p className="p-custom">
+              I combine expert massage therapy with guided Nordic walking
+              sessions to create a complete wellness experience, tailored to
+              your body’s unique needs.
+            </p>
+            <div className="my-6 flex space-x-4">
+              <button className="primary-btn">Learn more</button>
+              <button className="secondary-btn">
+                Book a free consultation
+              </button>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+      </div>
+      {/* Services Section */}
+      <section className="mb-12">
+        <h2 className="text-3xl font-bold text-gray-800 mb-6">
+          Tailored to fit your needs
+        </h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          <ServiceCard
+            title="Massage Therapy"
+            image="/assets/massage.jpg"
+            description="Body text for whatever you'd like to add more to the subheading."
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+          <ServiceCard
+            title="Personalized Approach"
+            image="/assets/individual-training.jpg"
+            description="Body text for whatever you'd like to expand on the main point."
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+          <ServiceCard
+            title="Group Trainings"
+            image="/assets/nordic-walking.jpg"
+            description="Body text for whatever you'd like to share more."
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        </div>
+      </section>
+
+      {/* Massage Experience Section */}
+      <section className="bg-blue-100 p-12 rounded-lg">
+        <h2 className="text-3xl font-bold text-gray-800 mb-4">
+          Experience the Healing Power of Massage
+        </h2>
+        <p className="text-gray-700 mb-6">
+          Our massage services are designed to rejuvenate your body and mind.
+          Whether you’re seeking relaxation or relief from tension, we tailor
+          each session to meet your unique needs.
+        </p>
+        <div className="flex space-x-4 mb-6">
+          <Link
+            href="#"
+            className="bg-green-500 text-white px-6 py-2 rounded-md"
+          >
+            Book now
+          </Link>
+          <Link
+            href="#"
+            className="border border-green-500 text-green-500 px-6 py-2 rounded-md"
+          >
+            Learn More
+          </Link>
+        </div>
+        <Image
+          src="/assets/massage-therapy.jpg"
+          width={800}
+          height={500}
+          alt="Massage"
+          className="rounded-lg"
+        />
+      </section>
+
+      <div className="bg-white text-gray-900">
+        <div className="p-8 text-center">
+          <h2 className="text-4xl font-bold">
+            Transform Your Posture, Transform Your Life
+          </h2>
+          <p className="mt-4">
+            Our posture correction classes are designed to enhance your
+            alignment and overall wellness.
+          </p>
+        </div>
+
+        <section className="flex flex-col md:flex-row items-center p-8 bg-gray-100">
+          <div className="md:w-1/2 p-4">
+            <h2 className="text-2xl font-semibold">Expert Guidance</h2>
+            <p>
+              Learn techniques that promote better posture and reduce discomfort
+              in daily activities.
+            </p>
+            <button className="mt-4 px-4 py-2 bg-green-600 text-white rounded-lg">
+              Book a free consultation
+            </button>
+          </div>
+          <div className="md:w-1/2">
+            <img
+              src="/posture-correction.jpg"
+              alt="Posture correction"
+              className="rounded-lg"
+            />
+          </div>
+        </section>
+
+        <section className="flex flex-col md:flex-row-reverse items-center p-8 bg-green-50">
+          <div className="md:w-1/2 p-4">
+            <h2 className="text-2xl font-semibold">
+              Discover the Joy of Nordic Walking
+            </h2>
+            <p>
+              Join our Nordic walking groups to enhance your fitness and
+              well-being.
+            </p>
+            <button className="mt-4 px-4 py-2 bg-green-600 text-white rounded-lg">
+              Join now
+            </button>
+          </div>
+          <div className="md:w-1/2">
+            <img
+              src="/nordic-walking.jpg"
+              alt="Nordic walking group"
+              className="rounded-lg"
+            />
+          </div>
+        </section>
+
+        <section className="p-8 bg-white">
+          <h2 className="text-2xl font-bold text-center">
+            Real Stories, Real Results
+          </h2>
+          <div className="flex flex-col md:flex-row justify-around mt-8">
+            {[1, 2, 3].map((_, i) => (
+              <div
+                key={i}
+                className="bg-gray-50 p-4 rounded-lg shadow-md w-80 mb-4"
+              >
+                <p className="italic">
+                  "The massage therapy sessions have truly changed my life. I
+                  feel more relaxed and rejuvenated than ever before!"
+                </p>
+                <p className="mt-2 text-sm">May 17, 2023</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <footer className="p-8 bg-gray-900 text-white text-center">
+          <h2 className="text-2xl font-bold">
+            Ready To Transform Your Health?
+          </h2>
+          <button className="mt-4 px-6 py-2 bg-green-600 rounded-lg">
+            Start Your Journey Now
+          </button>
+          <p className="mt-8 text-sm">
+            © 2024 Wellness Studio. All rights reserved.
+          </p>
+        </footer>
+      </div>
+    </div>
+  );
+}
+
+function ServiceCard({ title, image, description }) {
+  return (
+    <div className="bg-white p-4 shadow-md rounded-lg">
+      <Image
+        src={image}
+        width={300}
+        height={200}
+        alt={title}
+        className="rounded-md"
+      />
+      <h3 className="text-xl font-semibold mt-4">{title}</h3>
+      <p className="text-gray-600 mt-2">{description}</p>
     </div>
   );
 }
