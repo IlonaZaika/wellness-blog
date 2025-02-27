@@ -25,7 +25,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto flex items-center justify-between ">
         {/* Left side (Navigation) */}
-        <ul className="hidden lg:flex items-center gap-6 font-inter font-light text-sm">
+        <ul className="hidden lg:flex items-center gap-6 font-inter font-light text-sm w-1/3">
           {navItems.map((item, index) =>
             item.hasServicesInside ? (
               <li
@@ -73,8 +73,8 @@ export default function Navbar() {
         </Link>
 
         {/* Right side (Buttons) */}
-        <div className="hidden lg:flex items-center gap-8">
-          <button className="border border-textGreen font-light text-sm px-4 py-2 rounded-lg hover:text-accent hover:border-accent">
+        <div className="hidden lg:flex justify-end gap-8 w-1/3">
+          <button className="border border-textGreen text-textGreen font-inter font-light text-sm px-4 py-2 rounded-lg hover:text-accent hover:border-accent">
             Book now
           </button>
           <button

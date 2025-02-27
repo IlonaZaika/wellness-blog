@@ -39,7 +39,7 @@ h6 {
 }
 
 .h1-custom {
-  @apply font-medium text-[40px] sm:text-[48px] md:text-[56px] leading-[120%];
+  @apply font-medium text-[38px] sm:text-[48px] md:text-[56px] leading-[120%];
 }
 
 .h2-custom {
@@ -47,7 +47,7 @@ h6 {
 }
 
 .h3-custom {
-  @apply font-inter font-light text-[14px] sm:text-[16px] md:text-[16px] leading-[120%] uppercase;
+  @apply font-inter font-light text-[11px] sm:text-[16px] md:text-[16px] leading-[120%] uppercase;
 }
 
 .p-custom {

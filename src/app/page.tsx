@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="bg-gradient-to-b from-green-50 to-cyan-100 flex items-center justify-center pt-28 sm:p-section">
-        <div className=" container mx-auto px-4 sm:px-6 lg:px-6 max-w-6xl flex flex-col md:flex-row items-center gap-8 md:py-16">
+      <div className="bg-gradient-to-b from-green-50 to-cyan-50 flex items-center justify-center pt-2 md:p-section lg:pt-20">
+        <div className="container mx-auto max-w-6xl flex flex-col px-4 items-center md:flex-row gap-8 pt-16 lg:px-6">
           <Image
             src="/assets/hero-img.jpg"
             alt="Wellness"
@@ -14,7 +14,7 @@ export default function Home() {
             width={400}
             height={400}
           />
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="h3-custom">
               Holistic Well-being Through Movement and Touch
             </h3>
@@ -24,7 +24,7 @@ export default function Home() {
               sessions to create a complete wellness experience, tailored to
               your body’s unique needs.
             </p>
-            <div className="my-6 flex space-x-4">
+            <div className="my-6 flex flex-col sm:flex-row space-x-0 sm:space-x-2 gap-2">
               <button className="primary-btn">Learn more</button>
               <button className="secondary-btn">
                 Book a free consultation
