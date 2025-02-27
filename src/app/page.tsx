@@ -77,7 +77,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="w-full relative min-h-[400px] md:min-h-[400px] lg:min-h-[600px]">
+        <div className="w-full relative min-h-[200px] md:min-h-[400px] lg:min-h-[600px]">
           <Image
             src="/assets/massage-therapy.jpg"
             alt="Massage"
@@ -138,7 +138,7 @@ export default function Home() {
       {/* Nordic Walking Section */}
       <section className="bg-bgGreen p-sm md:p-md lg:p-lg">
         <div className="flex flex-col md:flex-row py-sm">
-          <div className="md:w-2/3">
+          <div className="md:w-1/2 pr-sm">
             <h3 className="h3-custom">Move</h3>
             <h2 className="h2-custom">Discover the Joy of Nordic Walking</h2>
             <p className="p-custom">
@@ -154,7 +154,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="w-full md:w-1/3 relative min-h-[200px] md:min-h-[400px]">
+          <div className="md:w-1/2 relative min-h-[200px] md:min-h-[400px]">
             <Image
               src="/assets/nordic-walking.jpg"
               alt="Posture correction"
