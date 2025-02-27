@@ -178,8 +178,8 @@ export default function Home() {
                 className="bg-gray-50 p-4 rounded-lg shadow-md w-80 mb-4"
               >
                 <p className="italic">
-                  "The massage therapy sessions have truly changed my life. I
-                  feel more relaxed and rejuvenated than ever before!"
+                  The massage therapy sessions have truly changed my life. I
+                  feel more relaxed and rejuvenated than ever before!
                 </p>
                 <p className="mt-2 text-sm">May 17, 2023</p>
               </div>

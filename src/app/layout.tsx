@@ -3,8 +3,8 @@ import { Inter, Rokkitt } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
-const rokkitt = Rokkitt({ subsets: ["latin"] });
+Inter({ subsets: ["latin"] });
+Rokkitt({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",

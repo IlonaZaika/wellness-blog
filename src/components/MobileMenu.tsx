@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { navItems, serviceLinks, languageLinks } from "../constants/navItems";
+import { navItems } from "../constants/navItems";
 
 import { useState } from "react";
 
