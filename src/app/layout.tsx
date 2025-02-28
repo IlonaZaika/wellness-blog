@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Rokkitt } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const rokkitt = Rokkitt({ subsets: ["latin"] });
@@ -24,7 +25,7 @@ export default function RootLayout({
       <body className={`${rokkitt.className}`}>
         <Navbar />
         <main>{children}</main>
-        {/* <Footer></Footer> */}
+        <Footer />
       </body>
     </html>
   );

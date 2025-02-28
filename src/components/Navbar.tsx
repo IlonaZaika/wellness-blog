@@ -35,7 +35,7 @@ export default function Navbar() {
                 className="relative text-textGreen hover:text-accent cursor-pointer"
                 onMouseEnter={() => setIsServicesOpen(true)}
               >
-                Services ↓
+                Services ▾
                 {isServicesOpen && (
                   <ul
                     className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md"
@@ -106,7 +106,7 @@ export default function Navbar() {
                 {languageLinks.map((lang, index) => (
                   <li
                     key={index}
-                    className="px-4 py-2 text-textGreen hover:text-accent"
+                    className="px-4 py-2 text-textGreen font-inter hover:text-accent"
                   >
                     <Link href={lang.href}>{lang.name}</Link>
                   </li>

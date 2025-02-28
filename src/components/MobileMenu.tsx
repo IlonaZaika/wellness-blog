@@ -85,7 +85,7 @@ export default function MobileMenu() {
             </button>
           </li>
           <li className="mt-4 border-t border-accent">
-            <button className="py-4 text-textGreen font-light text-sm font-inter hover:text-accent flex justify-center items-center">
+            <button className="py-4 text-textGreen text-md font-inter hover:text-accent flex justify-center items-center">
               <svg
                 width="25"
                 height="25"

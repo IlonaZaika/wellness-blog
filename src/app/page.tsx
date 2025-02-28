@@ -1,4 +1,5 @@
 import ServiceCard from "@/components/ServiceCard";
+import Testimonials from "@/components/Testimonials";
 import { servicesItems } from "@/constants/servicesItems";
 import Image from "next/image";
 import Link from "next/link";
@@ -81,9 +82,8 @@ export default function Home() {
           <Image
             src="/massage-therapy.jpg"
             alt="Massage"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg"
+            fill
+            className="object-cover rounded-lg"
           />
         </div>
       </section>
@@ -115,7 +115,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col my-4 sm:flex-row space-x-0 sm:space-x-2 text-center md:text-left md:mt-sm">
+            <div className="flex flex-col my-4 sm:flex-row space-x-0 sm:space-x-2 gap-2 text-center md:text-left md:mt-sm">
               <Link href="#" className="secondary-btn">
                 Learn more
               </Link>
@@ -128,9 +128,8 @@ export default function Home() {
             <Image
               src="/posture-correction.jpg"
               alt="Posture correction"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-lg"
+              fill
+              className="object-cover rounded-lg"
             />
           </div>
         </div>
@@ -145,7 +144,7 @@ export default function Home() {
               Join our Nordic walking groups to enhance your fitness and
               well-being.
             </p>
-            <div className="flex flex-col my-4 sm:flex-row space-x-0 sm:space-x-2 text-center md:text-left md:mt-sm">
+            <div className="flex flex-col my-4 sm:flex-row space-x-0 sm:space-x-2 gap-2 text-center md:text-left md:mt-sm">
               <Link href="#" className="secondary-btn">
                 Learn more
               </Link>
@@ -158,47 +157,31 @@ export default function Home() {
             <Image
               src="/nordic-walking.jpg"
               alt="Posture correction"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-lg"
+              fill
+              className="object-cover rounded-lg"
             />
           </div>
         </div>
       </section>
+      {/* Testimonials Section */}
+      <section className="bg-bgBase p-sm md:p-md lg:px-lg">
+        <h3 className="h3-custom">Testimonials</h3>
 
-      <div className="bg-white text-gray-900">
-        <section className="p-8 bg-white">
-          <h2 className="text-2xl font-bold text-center">
-            Real Stories, Real Results
-          </h2>
-          <div className="flex flex-col md:flex-row justify-around mt-8">
-            {[1, 2, 3].map((_, i) => (
-              <div
-                key={i}
-                className="bg-gray-50 p-4 rounded-lg shadow-md w-80 mb-4"
-              >
-                <p className="italic">
-                  The massage therapy sessions have truly changed my life. I
-                  feel more relaxed and rejuvenated than ever before!
-                </p>
-                <p className="mt-2 text-sm">May 17, 2023</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <footer className="p-8 bg-gray-900 text-white text-center">
-          <h2 className="text-2xl font-bold">
-            Ready To Transform Your Health?
-          </h2>
-          <button className="mt-4 px-6 py-2 bg-green-600 rounded-lg">
-            Start Your Journey Now
-          </button>
-          <p className="mt-8 text-sm">
-            © 2024 Wellness Studio. All rights reserved.
-          </p>
-        </footer>
-      </div>
+        <h2 className="h2-custom">Real Stories, Real Results</h2>
+        <p className="p-custom">
+          Hear from our clients and discover how our personalized wellness
+          approach has improved their lives
+        </p>
+        <Testimonials />
+      </section>
+      <section className="p-sm md:p-md lg:px-lg text-center">
+        <h2 className="h2-custom text-accent">
+          Ready To Transform Your Health?
+        </h2>
+        <button className="mt-4 secondary-btn bg-bgGreen">
+          Start Your Journey Now
+        </button>
+      </section>
     </div>
   );
 }
