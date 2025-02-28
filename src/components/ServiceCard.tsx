@@ -13,7 +13,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   description,
 }) => {
   return (
-    <div className="bg-bgBase shadow-md rounded-lg overflow-hidden">
+    <div className="bg-bgBase rounded-lg overflow-hidden">
       <div className="relative w-full h-56">
         <Image src={imageUrl} fill className="object-cover" alt={title} />
       </div>

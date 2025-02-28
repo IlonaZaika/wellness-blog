@@ -65,3 +65,7 @@ h6 {
 .secondary-btn {
   @apply font-inter font-light border border-accent text-accent rounded-lg hover:bg-accent hover:text-bgLight px-4 sm:px-6 py-2  text-[14px] sm:text-[16px];
 }
+
+.link {
+  @apply hover:text-accent cursor-pointer;
+}

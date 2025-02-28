@@ -25,10 +25,10 @@ const Footer = () => {
         <div>
           <h4 className="font-inter font-semibold text-white">Quick Links</h4>
           <ul className="mt-4 space-y-2">
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Blog</li>
-            <li>Contact Us</li>
+            <li className="link">About Us</li>
+            <li className="link">Services</li>
+            <li className="link">Blog</li>
+            <li className="link">Contact Us</li>
           </ul>
         </div>
         <div>
@@ -36,20 +36,20 @@ const Footer = () => {
             Connect With Us
           </h4>
           <ul className="mt-4 space-y-2">
-            <li>Events</li>
-            <li>FAQs</li>
-            <li>Gallery</li>
+            <li className="link">Events</li>
+            <li className="link">FAQs</li>
+            <li className="link">Gallery</li>
           </ul>
         </div>
 
         <div>
           <h4 className="font-inter font-semibold text-white">Stay Updated </h4>
           <ul className="mt-4 space-y-2">
-            <li className="flex items-center space-x-2">
+            <li className="flex items-center space-x-2 link">
               <FaFacebook className="text-white" />
               <span>Facebook</span>
             </li>
-            <li className="flex items-center space-x-2">
+            <li className="flex items-center space-x-2 link">
               <FaInstagram className="text-white" />
               <span>Instagram</span>
             </li>
