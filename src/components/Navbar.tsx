@@ -3,11 +3,15 @@ import Link from "next/link";
 import { navItems, serviceLinks, languageLinks } from "../constants/navItems";
 import { useState, useEffect } from "react";
 import MobileMenu from "./MobileMenu";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isLanguagesOpen, setIsLanguagesOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isHome = pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,9 +24,9 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 w-full max-w-screen px-6 py-4 z-50 lg:px-12 ${
-        isScrolled
-          ? "bg-white border border-b-accent"
-          : "bg-transparent border border-b-white"
+        isHome && !isScrolled
+          ? "bg-transparent border border-b-white"
+          : "bg-white border border-b-accent"
       }`}
     >
       <div className="container mx-auto flex items-center justify-between ">

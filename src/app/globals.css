@@ -23,7 +23,7 @@
 }
 
 body {
-  color: var(--color-text);
+  color: var(--color-text-grey);
   background: white;
   @apply font-inter text-[14px] sm:text-[16px] md:text-[18px];
 }
@@ -54,8 +54,12 @@ h6 {
   @apply font-heading font-bold text-[24px] my-2 sm:text-[24px] md:text-[28px] leading-[120%] text-textGreen;
 }
 
+.h5-custom {
+  @apply font-heading font-semibold text-[18px] my-2 sm:text-[20px] md:text-[24px] leading-[120%] text-accent;
+}
+
 .p-custom {
-  @apply font-inter text-[14px] sm:text-[16px] md:text-[16px] font-light leading-[150%] text-textGrey;
+  @apply font-inter text-[14px] sm:text-[16px] md:text-[16px] font-light leading-[150%];
 }
 
 .primary-btn {

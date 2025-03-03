@@ -1,8 +1,9 @@
 import { FaFacebook, FaInstagram } from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-textGreen font-inter font-light text-white text-[13px] py-12">
+    <footer className="bg-textGreen font-inter font-light text-white text-[13px] pt-12 pb-3">
       <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-5 gap-8">
         <div className="md:col-span-2 grid grid-cols-1 md:pr-10">
           <div>
@@ -16,7 +17,7 @@ const Footer = () => {
                 placeholder="Your Email Here"
                 className="px-4 py-3 rounded-lg w-full text-gray-800 focus:outline-none"
               />
-              <button className="px-4 py-3 ml-2 rounded-lg bg-accent text-white">
+              <button className="px-4 py-3 ml-2 rounded-lg bg-accent text-white font-inter">
                 Subscribe
               </button>
             </form>
@@ -57,8 +58,13 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="border-t border-bgLight mt-8 pt-6 text-sm text-center">
-        <p className="px-6">© 2024 Wellness Studio. All rights reserved.</p>
+      <div className="border-t border-bgLight mt-8 pt-3 text-sm text-center">
+        <Link href="#" className="link">
+          Website by Ilona Zaika
+        </Link>
+        <p className="px-6 pt-1">
+          © 2024 Wellness Studio. All rights reserved.
+        </p>
       </div>
     </footer>
   );
