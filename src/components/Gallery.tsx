@@ -21,8 +21,8 @@ const images = [
 
 export default function Gallery() {
   const [current, setCurrent] = useState(0);
-  const [hovered, setHovered] = useState(null);
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [hovered, setHovered] = useState<number | null>(null);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const nextSlide = () =>
     setCurrent((prev) => (prev < images.length - 1 ? prev + 1 : 0));
