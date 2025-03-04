@@ -7,6 +7,14 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-5 gap-8">
         <div className="md:col-span-2 grid grid-cols-1 md:pr-10">
           <div>
+            <div className="mb-2">
+              <Link
+                href="/"
+                className="text-xl font-light font-heading text-white tracking-wide"
+              >
+                WELLNESS STUDIO
+              </Link>
+            </div>
             <h3 className="font-inter font-light text-white">
               Subscribe to our newsletter for the latest updates on wellness and
               services.

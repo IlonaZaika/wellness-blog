@@ -1,4 +1,9 @@
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import {
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaClock,
+} from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -7,7 +12,7 @@ export default function Contact() {
         <div className="flex flex-col md:flex-row md:space-x-6 justify-center">
           {/* Left Side - Contact Info */}
           <div className="bg-bgBase text-textGrey p-10 rounded-lg flex items-center">
-            <div className="">
+            <div>
               <div className="flex items-start space-x-4 py-4">
                 <FaMapMarkerAlt className="text-accent text-2xl" />
                 <div>
@@ -33,6 +38,18 @@ export default function Contact() {
                 <div>
                   <h3 className="font-medium text-accent font-inter">Email</h3>
                   <p className="p-custom">info@example.com </p>{" "}
+                </div>
+              </div>
+              <div className="flex items-start space-x-4 py-4">
+                <FaClock className="text-accent text-2xl" />
+                <div>
+                  <h3 className="font-medium text-accent font-inter">
+                    Opening Hours
+                  </h3>
+                  <p className="p-custom">
+                    Mon-Sat: 11AM - 23PM <br />
+                    Sunday: Closed
+                  </p>
                 </div>
               </div>
             </div>
