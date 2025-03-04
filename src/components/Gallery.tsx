@@ -118,10 +118,13 @@ export default function Gallery() {
               >
                 <X />
               </button>
-              <img
+              <Image
                 src={selectedImage}
                 alt="Enlarged view"
+                width={500}
+                height={300}
                 className="w-full h-auto"
+                layout="intrinsic"
               />
             </motion.div>
           </motion.div>

@@ -15,7 +15,7 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Your Email Here"
-                className="px-4 py-3 rounded-lg w-full text-gray-800 focus:outline-none"
+                className="px-4 py-3 rounded-lg w-full font-inter text-textGreen focus:outline-none"
               />
               <button className="px-4 py-3 ml-2 rounded-lg bg-accent text-white font-inter">
                 Subscribe
@@ -58,12 +58,12 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="border-t border-bgLight mt-8 pt-3 text-sm text-center">
-        <Link href="#" className="link">
-          Website by Ilona Zaika
-        </Link>
+      <div className="border-t border-bgLight mt-8 pt-3 text-xs text-center">
         <p className="px-6 pt-1">
-          © 2024 Wellness Studio. All rights reserved.
+          © 2024 Wellness Studio. All rights reserved. ·
+          <Link href="#" className="link pl-1">
+            Website by Ilona Zaika
+          </Link>
         </p>
       </div>
     </footer>

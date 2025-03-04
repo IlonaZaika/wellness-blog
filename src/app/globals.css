@@ -63,7 +63,7 @@ h6 {
 }
 
 .primary-btn {
-  @apply font-inter font-light bg-accent text-bgLight rounded-lg hover:bg-btnHoveredGreen px-4 sm:px-6 py-2  text-[14px] sm:text-[16px];
+  @apply font-inter font-light bg-accent text-white rounded-lg hover:bg-btnHoveredGreen hover:text-bgLight px-4 sm:px-6 py-2  text-[14px] sm:text-[16px];
 }
 
 .secondary-btn {
