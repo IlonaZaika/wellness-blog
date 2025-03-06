@@ -48,9 +48,9 @@ export default function Home() {
           </h2>
 
           {/* Grid Layout for Two Rows on md */}
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Image Card (Ensures Full Fit) */}
-            <div className="h-full w-full">
+            <div className="h-full w-full md:my-2">
               <Image
                 src="/stress-woman.jpg"
                 alt="Stressed Woman"
@@ -59,24 +59,25 @@ export default function Home() {
                 className="rounded-lg object-cover h-full w-full"
               />
             </div>
-
-            {/* Cards for Symptoms */}
-            {symptomsData.map((item, index) => (
-              <div
-                key={index}
-                className="bg-white p-5 rounded-lg shadow-sm h-full flex flex-col justify-start"
-              >
-                <h4 className="font-rokkit text-textGreen text-2xl">
-                  {item.title}
-                </h4>
-                <p className="py-2 text-textGrey font-inter font-light text-sm">
-                  {item.description}
-                </p>
-              </div>
-            ))}
+            <div className="flex flex-col">
+              {/* Cards for Symptoms */}
+              {symptomsData.map((item, index) => (
+                <div
+                  key={index}
+                  className="bg-white p-5 m-2 rounded-lg shadow-sm h-full flex flex-col justify-start"
+                >
+                  <h4 className="font-rokkit text-textGreen text-2xl">
+                    {item.title}
+                  </h4>
+                  <p className="py-2 text-textGrey font-inter font-light text-sm">
+                    {item.description}
+                  </p>
+                </div>
+              ))}
+            </div>
 
             {/* Call to Action Box */}
-            <div className="bg-accent p-5 rounded-lg shadow-sm h-full flex items-center justify-center">
+            <div className="bg-accent p-5 md:my-2 rounded-lg shadow-sm h-full flex items-center justify-center">
               <p className="py-2 text-white font-inter font-light text-sm">
                 {callToAction}
               </p>
