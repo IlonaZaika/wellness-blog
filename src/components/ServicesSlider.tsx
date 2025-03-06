@@ -5,7 +5,16 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-const services = {
+// Define the structure of a service
+interface Service {
+  name: string;
+  price: number;
+  duration: string;
+  description: string;
+}
+
+// Define the services object with proper typing
+const services: Record<string, Service[]> = {
   Massage: [
     {
       name: "Swedish Massage",
@@ -75,18 +84,18 @@ const services = {
 };
 
 const ServicesSlider = () => {
-  const [activeTab, setActiveTab] = useState<string>("Massage");
+  const [activeTab, setActiveTab] = useState<keyof typeof services>("Massage");
   const sliderRef = useRef<HTMLDivElement>(null);
   const searchParams = useSearchParams();
 
   useEffect(() => {
     const categoryFromUrl = searchParams.get("category");
-    if (categoryFromUrl && Object.keys(services).includes(categoryFromUrl)) {
-      setActiveTab(categoryFromUrl);
+    if (categoryFromUrl && categoryFromUrl in services) {
+      setActiveTab(categoryFromUrl as keyof typeof services);
     }
   }, [searchParams]);
 
-  const scrollAmount = 400; // Increase scroll for larger cards
+  const scrollAmount = 500; // Adjusted for larger images
   const scrollLeft = () =>
     sliderRef.current?.scrollBy({ left: -scrollAmount, behavior: "smooth" });
   const scrollRight = () =>
@@ -162,7 +171,7 @@ const ServicesSlider = () => {
                   <h4 className="font-rokkit text-textGreen text-2xl">
                     {service.name}
                   </h4>
-                  <p className="font-rokkit font-light whitespace-nowrap">
+                  <p className="font-rokkit font-light whitespace-nowrap pt-1">
                     {service.duration} | ${service.price}
                   </p>
                 </div>
