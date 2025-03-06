@@ -7,7 +7,7 @@
   --color-background-blue: #e6f5f6;
   --color-background-green: #eef7d5;
   --color-accent: #789d32;
-  --color-button-hover-bg: #7a9841;
+  --color-button-hover-bg: #dfedce;
   --color-text-green: #344536;
   --color-text-grey: #545a51;
   --color-text-light: #ededed;
@@ -51,7 +51,7 @@ h6 {
 }
 
 .h4-custom {
-  @apply font-heading font-bold text-[24px] my-2 sm:text-[24px] md:text-[28px] leading-[120%] text-textGreen;
+  @apply font-heading font-normal text-[24px] my-2 sm:text-[24px] md:text-[28px] leading-[120%] text-textGreen;
 }
 
 .h5-custom {
@@ -63,11 +63,11 @@ h6 {
 }
 
 .primary-btn {
-  @apply font-inter font-light bg-accent text-white rounded-lg hover:bg-btnHoveredGreen hover:text-bgLight px-4 sm:px-6 py-2  text-[14px] sm:text-[16px];
+  @apply font-inter font-light bg-accent text-white rounded-2xl hover:bg-btnHoveredGreen hover:text-bgLight px-4 sm:px-6 py-2  text-[14px] sm:text-[16px];
 }
 
 .secondary-btn {
-  @apply font-inter font-light border border-accent text-accent rounded-lg hover:bg-accent hover:text-bgLight px-4 sm:px-6 py-2  text-[14px] sm:text-[16px];
+  @apply font-inter font-light border border-accent text-accent rounded-2xl hover:bg-accent hover:text-bgLight px-4 sm:px-6 py-2  text-[14px] sm:text-[16px];
 }
 
 .link {

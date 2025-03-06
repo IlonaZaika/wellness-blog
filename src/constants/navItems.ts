@@ -9,8 +9,8 @@ export const navItems = [
 ];
 
 export const serviceLinks = [
-  { name: "Massage Therapy", href: "/services/massage" },
-  { name: "Anti-Aging Treatments", href: "/services/anti-aging" },
+  { name: "Massage Therapy", href: "/services?category=Massage" },
+  { name: "Anti-Aging Treatments", href: "/services?category=Facial" },
   { name: "Posture Correction", href: "/services/posture" },
   { name: "Nordic Walking Groups", href: "/services/nordic-walking" },
 ];

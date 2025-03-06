@@ -1,3 +1,11 @@
-export default function Services() {
-  return <div>Services Page</div>;
+// app/services/page.tsx
+
+import ServicesSlider from "@/components/ServicesSlider";
+
+export default function ServicesPage() {
+  return (
+    <div>
+      <ServicesSlider />
+    </div>
+  );
 }

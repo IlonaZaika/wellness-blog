@@ -1,6 +1,7 @@
 import ServiceCard from "@/components/ServiceCard";
 import Testimonials from "@/components/Testimonials";
 import { servicesItems } from "@/constants/servicesItems";
+import { callToAction, symptomsData } from "@/constants/symptomsData";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,7 +9,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-green-50 to-cyan-50 flex items-center justify-center pt-2 md:p-md lg:pt-20">
+      <section className="bg-gradient-to-b from-green-50 to-cyan-50 flex items-center justify-center pt-2 md:p-md lg:pt-20 border border-b-white">
         <div className="container mx-auto max-w-6xl flex flex-col px-4 items-center md:flex-row gap-8 pt-16 lg:px-6">
           <Image
             src="/hero-img.jpg"
@@ -19,7 +20,8 @@ export default function Home() {
           />
           <div className="text-center md:text-left">
             <h3 className="h3-custom">
-              Holistic Well-being Through Movement and Touch
+              <strong>Massage Therapy & Nordic Walking </strong>| Edinburgh
+              <span className="hidden md:inline-block">, Scotland</span>
             </h3>
             <h1 className="h1-custom">Life In a Heathy Body</h1>
             <p className="p-custom">
@@ -29,17 +31,61 @@ export default function Home() {
             </p>
             <div className="my-6 flex flex-col sm:flex-row space-x-0 sm:space-x-2 gap-2">
               <Link href="#" className="primary-btn">
-                Learn more
+                Book Services
               </Link>
               <Link href="#" className="secondary-btn">
-                Book a free consultation
+                Get free consultation
               </Link>
             </div>
           </div>
         </div>
       </section>
+      {/* Symptoms Section */}
+      <section className="bg-bgBase p-sm md:p-md lg:px-lg">
+        <div className="max-w-full">
+          <h2 className="h2-custom mb-6 text-center md:text-left">
+            If You Are Experiencing...
+          </h2>
+
+          {/* Grid Layout for Two Rows on md */}
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
+            {/* Image Card (Ensures Full Fit) */}
+            <div className="h-full w-full">
+              <Image
+                src="/stress-woman.jpg"
+                alt="Stressed Woman"
+                width={400}
+                height={400}
+                className="rounded-lg object-cover h-full w-full"
+              />
+            </div>
+
+            {/* Cards for Symptoms */}
+            {symptomsData.map((item, index) => (
+              <div
+                key={index}
+                className="bg-white p-5 rounded-lg shadow-sm h-full flex flex-col justify-start"
+              >
+                <h4 className="font-rokkit text-textGreen text-2xl">
+                  {item.title}
+                </h4>
+                <p className="py-2 text-textGrey font-inter font-light text-sm">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+
+            {/* Call to Action Box */}
+            <div className="bg-accent p-5 rounded-lg shadow-sm h-full flex items-center justify-center">
+              <p className="py-2 text-white font-inter font-light text-sm">
+                {callToAction}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Services Section */}
-      <section className="mb-12 p-sm md:p-md lg:px-lg">
+      <section className=" p-sm md:p-md lg:px-lg">
         <h3 className="h3-custom">Services</h3>
         <h2 className="h2-custom">Tailored to fit your needs</h2>
         <div className="grid md:grid-cols-3 gap-6">
@@ -90,7 +136,7 @@ export default function Home() {
       {/* Posture Correction Section */}
       <section className="bg-bgBase p-sm md:p-md lg:px-lg">
         <div className="flex flex-col md:flex-row py-sm">
-          <div className="md:w-2/3 pr-sm">
+          <div className="md:w-2/3 md:pr-sm">
             <h3 className="h3-custom">Balance</h3>
             <h2 className="h2-custom">
               Transform Your Posture, Transform Your Life
@@ -137,7 +183,7 @@ export default function Home() {
       {/* Nordic Walking Section */}
       <section className="bg-bgGreen p-sm md:p-md lg:px-lg">
         <div className="flex flex-col md:flex-row py-sm">
-          <div className="md:w-1/2 pr-sm">
+          <div className="md:w-1/2 md:pr-sm">
             <h3 className="h3-custom">Move</h3>
             <h2 className="h2-custom">Discover the Joy of Nordic Walking</h2>
             <p className="p-custom">

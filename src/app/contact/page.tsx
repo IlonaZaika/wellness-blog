@@ -57,6 +57,7 @@ export default function Contact() {
           {/* Right Side - Contact Form */}
           <div>
             <h2 className="h2-custom">Contact Us</h2>
+
             <form className="font-inter font-light text-white text-[13px]">
               <input
                 type="text"

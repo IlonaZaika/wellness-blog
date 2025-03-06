@@ -39,7 +39,7 @@ export default function Navbar() {
                 className="relative text-textGreen hover:text-accent cursor-pointer"
                 onMouseEnter={() => setIsServicesOpen(true)}
               >
-                Services ▾
+                <Link href="/services">Services ▾</Link>
                 {isServicesOpen && (
                   <ul
                     className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md"
