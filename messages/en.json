@@ -1,0 +1,88 @@
+{
+  "HomePage": {
+    "logo": "WELLNESS STUDIO",
+    "nav": {
+      "home": "Home",
+      "services": "Services",
+      "massage_therapy": "Massage Therapy",
+      "facial_treatments": "Facial Treatments",
+      "posture_correction": "Posture Correction",
+      "nordic_walking_groups": "Nordic Walking Groups",
+      "about": "About",
+      "contact": "Contact",
+      "blog": "Blog"
+    },
+    "hero": {
+      "headline": "Live in a Healthy Body",
+      "subtitle": "Massage Therapy & Nordic Walking | Edinburgh",
+      "offer": {
+        "line1": "⫸ Massage Therapy",
+        "line2": "⫸ Facial Treatments",
+        "line3": "⫸ Posture Correction",
+        "line4": "⫸ Nordic Walking Groups"
+      },
+      "cta_book": "Book Services",
+      "cta_learn": "Learn More",
+      "cta_join": "Join a Nordic Walking Group",
+      "img_hero_alt": "Massage Therapist in Edinburgh"
+    },
+    "problem": {
+      "headline": "If You Are Experiencing...",
+      "symptom1": "Stress and tension",
+      "symptom_description1": "That cannot be relieved by any means. No matter how hard you try to relax or distract yourself, it persists, negatively affecting your overall well-being.",
+      "symptom2": "Back and neck pain",
+      "symptom_description2": "You lead a sedentary lifestyle and work a lot, or your routine involves heavy physical activity.",
+      "symptom3": "Weakened immunity",
+      "symptom_description3": "You feel weak and apathetic every day, and your body gradually loses its good shape. You've noticed that you get sick more often and tire more quickly.",
+      "symptom4": "Skin problems",
+      "symptom_description4": "You have noticed that your skin looks dull, saggy, or you have developed acne issues. All of this can worsen your mood and affect your overall well-being."
+    },
+    "solution": {
+      "headline": "A New Approach to Wellness",
+      "description": "At Wellness Studio, we combine expert massage therapy with guided Nordic walking to help you heal, move better, and feel your best—every day."
+    },
+    "services": {
+      "headline": "Tailored to fit your needs",
+      "subtitle": "Services",
+      "service1": {
+        "name": "Massage Therapy",
+        "description": "Relieve pain, reduce stress, and restore balance with expert massage therapy. Whether you're looking for deep relaxation, pain relief, or posture correction, our tailored treatments—including full body, hot stone, lymphatic drainage, and anti-aging massage—help you feel your best."
+      },
+      "service2": {
+        "name": "Personalized Sessions",
+        "description": "Our personalized posture correction sessions focus on identifying imbalances, improving alignment, and restoring mobility. Using massage therapy and movement-based techniques, we create a tailored plan to help you move pain-free."
+      },
+      "service3": {
+        "name": "Nordic Walking Groups",
+        "description": "Improve your posture, strength, and endurance with Nordic walking, a full-body workout that engages 90% of your muscles. This low-impact yet highly effective exercise is perfect for all ages, helping to improve cardiovascular health, burn calories, and enhance joint mobility. Plus, it's a great way to meet new people and enjoy the outdoors."
+      },
+      "cta_view_services": "View All Services"
+    },
+    "testimonials": {
+      "headline": "Real Stories, Real Results",
+      "subtitle": "Verified by Fresha",
+      "description": "Hear from our clients and discover how our personalized wellness approach has improved their lives",
+      "review1": "Iryna’s massage therapy completely changed how I feel in my body!",
+      "review2": "The Nordic walking sessions are not just fitness—they are community and fun!"
+    },
+    "cta_final": {
+      "headline": "Ready To Transform Your Health?",
+      "cta_book": "Start Your Journey Now "
+    },
+    "footer": {
+      "subscription": {
+        "email_placeholder": "Your Email Here",
+        "cta_subscribe": "Subscribe"
+      },
+      "quick_links": "Quick Links",
+      "about": "About Us",
+      "services": "Services",
+      "contact": "Contact Us",
+      "blog": "Blog",
+      "stay_updated": "Stay Updated",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "location": "Edinburgh, Scotland"
+    }
+  }
+}

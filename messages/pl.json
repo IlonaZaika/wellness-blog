@@ -1,0 +1,88 @@
+{
+  "HomePage": {
+    "logo": "WELLNESS STUDIO",
+    "nav": {
+      "home": "Strona główna",
+      "services": "Usługi",
+      "massage_therapy": "Terapia masażem",
+      "facial_treatments": "Zabiegi na twarz",
+      "posture_correction": "Korekcja postawy",
+      "nordic_walking_groups": "Grupy Nordic Walking",
+      "about": "O nas",
+      "contact": "Kontakt",
+      "blog": "Blog"
+    },
+    "hero": {
+      "headline": "Żyj w zdrowym ciele",
+      "subtitle": "Terapia masażem i Nordic Walking | Edynburg",
+      "offer": {
+        "line1": "⫸ Terapia masażem",
+        "line2": "⫸ Zabiegi na twarz",
+        "line3": "⫸ Korekcja postawy",
+        "line4": "⫸ Grupy Nordic Walking"
+      },
+      "cta_book": "Zarezerwuj usługę",
+      "cta_learn": "Dowiedz się więcej",
+      "cta_join": "Dołącz do grupy Nordic Walking",
+      "img_hero_alt": "Terapeuta masażu w Edynburgu"
+    },
+    "problem": {
+      "headline": "Jeśli doświadczasz...",
+      "symptom1": "Stres i napięcie",
+      "symptom_description1": "Których nie można złagodzić żadnym sposobem. Bez względu na to, jak bardzo próbujesz się zrelaksować lub odwrócić uwagę, nadal się utrzymują, negatywnie wpływając na Twoje samopoczucie.",
+      "symptom2": "Ból pleców i szyi",
+      "symptom_description2": "Prowadzisz siedzący tryb życia i dużo pracujesz lub Twoja rutyna obejmuje intensywną aktywność fizyczną.",
+      "symptom3": "Osłabiona odporność",
+      "symptom_description3": "Codziennie czujesz się słaby i apatyczny, a Twoje ciało stopniowo traci dobrą formę. Zauważyłeś, że częściej chorujesz i szybciej się męczysz.",
+      "symptom4": "Problemy skórne",
+      "symptom_description4": "Zauważyłeś, że Twoja skóra wygląda na matową, zwiotczałą lub pojawiły się problemy z trądzikiem. Wszystko to może pogorszyć Twój nastrój i wpłynąć na ogólne samopoczucie."
+    },
+    "solution": {
+      "headline": "Nowe podejście do zdrowia",
+      "description": "W Wellness Studio łączymy profesjonalną terapię masażem z prowadzonymi zajęciami Nordic Walking, aby pomóc Ci odzyskać zdrowie, lepiej się poruszać i czuć się świetnie – każdego dnia."
+    },
+    "services": {
+      "headline": "Dostosowane do Twoich potrzeb",
+      "subtitle": "Usługi",
+      "service1": {
+        "name": "Terapia masażem",
+        "description": "Złagodź ból, zredukuj stres i przywróć równowagę dzięki profesjonalnej terapii masażem. Niezależnie od tego, czy szukasz głębokiego relaksu, ulgi w bólu czy korekcji postawy, nasze indywidualne zabiegi – w tym masaż całego ciała, gorącymi kamieniami, drenaż limfatyczny i masaż przeciwstarzeniowy – pomogą Ci poczuć się najlepiej."
+      },
+      "service2": {
+        "name": "Indywidualne sesje",
+        "description": "Nasze spersonalizowane sesje korekcji postawy koncentrują się na identyfikacji nierównowagi, poprawie postawy i przywróceniu mobilności. Korzystając z terapii masażem i technik ruchowych, tworzymy indywidualny plan, który pomoże Ci poruszać się bez bólu."
+      },
+      "service3": {
+        "name": "Grupy Nordic Walking",
+        "description": "Popraw swoją postawę, siłę i wytrzymałość dzięki Nordic Walking, treningowi angażującemu 90% mięśni. To ćwiczenie o niskim obciążeniu, ale bardzo skuteczne, odpowiednie dla wszystkich grup wiekowych – poprawia zdrowie sercowo-naczyniowe, spala kalorie i zwiększa mobilność stawów. Dodatkowo, to świetna okazja do poznania nowych ludzi i cieszenia się świeżym powietrzem."
+      },
+      "cta_view_services": "Zobacz wszystkie usługi"
+    },
+    "testimonials": {
+      "headline": "Prawdziwe historie, prawdziwe rezultaty",
+      "subtitle": "Zweryfikowane przez Fresha",
+      "description": "Przeczytaj opinie naszych klientów i dowiedz się, jak nasze indywidualne podejście do zdrowia poprawiło ich życie",
+      "review1": "Masaż Iryny całkowicie zmienił moje samopoczucie!",
+      "review2": "Sesje Nordic Walking to nie tylko fitness – to wspólnota i świetna zabawa!"
+    },
+    "cta_final": {
+      "headline": "Gotowy na transformację swojego zdrowia?",
+      "cta_book": "Rozpocznij swoją podróż już teraz"
+    },
+    "footer": {
+      "subscription": {
+        "email_placeholder": "Twój e-mail tutaj",
+        "cta_subscribe": "Subskrybuj"
+      },
+      "quick_links": "Szybkie linki",
+      "about": "O nas",
+      "services": "Usługi",
+      "contact": "Kontakt",
+      "blog": "Blog",
+      "stay_updated": "Bądź na bieżąco",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "location": "Edynburg, Szkocja"
+    }
+  }
+}

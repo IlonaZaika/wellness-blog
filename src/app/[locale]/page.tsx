@@ -4,8 +4,11 @@ import { servicesItems } from "@/constants/servicesItems";
 import { callToAction, symptomsData } from "@/constants/symptomsData";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
+  const t = useTranslations("HomePage");
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -23,7 +26,7 @@ export default function Home() {
               <strong>Massage Therapy & Nordic Walking </strong>| Edinburgh
               <span className="hidden md:inline-block">, Scotland</span>
             </h3>
-            <h1 className="h1-custom">Life In a Heathy Body</h1>
+            <h1 className="h1-custom">{t("hero.headline")}</h1>
             <p className="p-custom">
               I combine expert massage therapy with guided Nordic walking
               sessions to create a complete wellness experience, tailored to
