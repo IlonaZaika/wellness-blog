@@ -39,7 +39,7 @@ h6 {
 }
 
 .h1-custom {
-  @apply font-heading font-medium text-[38px] sm:text-[48px] md:text-[56px] leading-[120%] my-6;
+  @apply font-heading font-medium text-[36px] sm:text-[48px] md:text-[56px] leading-[120%] my-6;
 }
 
 .h2-custom {
@@ -47,7 +47,7 @@ h6 {
 }
 
 .h3-custom {
-  @apply font-inter font-light text-[11px] sm:text-[16px] md:text-[16px] leading-[120%] uppercase my-4 text-textGrey;
+  @apply font-inter font-light uppercase my-4 text-textGrey text-[12px] md:text-sm lg:text-base;
 }
 
 .h4-custom {
@@ -59,15 +59,31 @@ h6 {
 }
 
 .p-custom {
-  @apply font-inter text-[14px] sm:text-[16px] md:text-[16px] font-light leading-[150%];
+  @apply font-inter font-light text-sm sm:text-sm md:text-base;
+}
+
+.btn {
+  @apply font-inter font-light rounded-2xl p-3 sm:px-6 text-[14px] md:text-[16px];
+}
+
+.btn-hover {
+  @apply hover:bg-btnHoveredGreen hover:text-accent hover:border-accent;
+}
+
+.primary {
+  @apply bg-accent text-white border border-accent;
+}
+
+.secondary {
+  @apply border border-accent text-accent;
 }
 
 .primary-btn {
-  @apply font-inter font-light bg-accent text-white rounded-2xl hover:bg-btnHoveredGreen hover:text-bgLight px-4 sm:px-6 py-2  text-[14px] sm:text-[16px];
+  @apply font-inter font-light bg-accent text-white rounded-2xl hover:bg-white hover:text-accent p-3 sm:px-6   text-[14px] sm:text-[16px];
 }
 
 .secondary-btn {
-  @apply font-inter font-light border border-accent text-accent rounded-2xl hover:bg-accent hover:text-bgLight px-4 sm:px-6 py-2  text-[14px] sm:text-[16px];
+  @apply font-inter font-light border border-accent text-accent rounded-2xl hover:bg-accent hover:text-bgLight p-3 sm:px-6 text-[14px] sm:text-[16px];
 }
 
 .link {

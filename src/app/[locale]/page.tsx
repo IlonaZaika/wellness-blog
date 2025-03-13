@@ -5,40 +5,54 @@ import { callToAction, symptomsData } from "@/constants/symptomsData";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import ActionButton from "@/components/ActionLink";
 
 export default function Home() {
   const t = useTranslations("HomePage");
 
   return (
-    <div className="min-h-screen">
+    <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-green-50 to-cyan-50 flex items-center justify-center pt-2 md:p-md lg:pt-20 border border-b-white">
-        <div className="container mx-auto max-w-6xl flex flex-col px-4 items-center md:flex-row gap-8 pt-16 lg:px-6">
+      <section className="min-h-screen bg-gradient-to-b from-green-50 to-cyan-50 px-5 py-20 lg:p-32">
+        <div className="mx-auto flex flex-col justify-center items-center md:flex-row gap-8 lg:max-w-6xl">
           <Image
             src="/hero-img.jpg"
             alt="Wellness"
-            className="rounded-lg w-3/5 h-3/5"
+            className="hidden md:block rounded-lg"
             width={400}
             height={400}
           />
           <div className="text-center md:text-left">
-            <h3 className="h3-custom">
-              <strong>Massage Therapy & Nordic Walking </strong>| Edinburgh
-              <span className="hidden md:inline-block">, Scotland</span>
-            </h3>
+            <h3 className="h3-custom">{t("hero.subtitle")}</h3>
             <h1 className="h1-custom">{t("hero.headline")}</h1>
-            <p className="p-custom">
-              I combine expert massage therapy with guided Nordic walking
-              sessions to create a complete wellness experience, tailored to
-              your body’s unique needs.
-            </p>
-            <div className="my-6 flex flex-col sm:flex-row space-x-0 sm:space-x-2 gap-2">
-              <Link href="#" className="primary-btn">
-                Book Services
-              </Link>
-              <Link href="#" className="secondary-btn">
-                Get free consultation
-              </Link>
+            <p className="p-custom">{t("hero.bio")}</p>
+            <div className="my-5 flex flex-row items-center gap-2 md:hidden lg:hidden">
+              <Image
+                src="/hero-img.jpg"
+                alt="Wellness"
+                className="rounded-lg"
+                width={170}
+                height={230}
+              />
+              <ul className="p-custom text-left">
+                <li className="py-2">{t("hero.offer.line1")}</li>
+                <li className="py-2">{t("hero.offer.line2")}</li>
+                <li className="py-2">{t("hero.offer.line3")}</li>
+                <li className="py-2">{t("hero.offer.line4")}</li>
+              </ul>
+            </div>
+            <div className="my-6 flex flex-row gap-3">
+              <ActionButton
+                href="#"
+                variant="primary"
+                label={t("hero.cta_book")}
+              />
+              <ActionButton
+                href="#"
+                variant="secondary"
+                label={t("hero.cta_join")}
+                className="bg-white"
+              />
             </div>
           </div>
         </div>
