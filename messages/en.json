@@ -28,19 +28,14 @@
     },
     "problem": {
       "headline": "If You Are Experiencing...",
+      "subtitle": "Your body and mind need help",
       "symptom1": "Stress and tension",
-      "symptom_description1": "That cannot be relieved by any means. No matter how hard you try to relax or distract yourself, it persists, negatively affecting your overall well-being.",
       "symptom2": "Back and neck pain",
-      "symptom_description2": "You lead a sedentary lifestyle and work a lot, or your routine involves heavy physical activity.",
       "symptom3": "Weakened immunity",
-      "symptom_description3": "You feel weak and apathetic every day, and your body gradually loses its good shape. You've noticed that you get sick more often and tire more quickly.",
       "symptom4": "Skin problems",
-      "symptom_description4": "You have noticed that your skin looks dull, saggy, or you have developed acne issues. All of this can worsen your mood and affect your overall well-being."
+      "img_problem_alt": "Tired woman experiencing stress and fatigue. Signs of burnout, muscle tension, and exhaustion."
     },
-    "solution": {
-      "headline": "A New Approach to Wellness",
-      "description": "At Wellness Studio, we combine expert massage therapy with guided Nordic walking to help you heal, move better, and feel your best—every day."
-    },
+    "solution": "Find the perfect wellness plan designed to your body’s needs.",
     "services": {
       "headline": "Tailored to fit your needs",
       "subtitle": "Services",

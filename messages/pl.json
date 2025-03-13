@@ -29,19 +29,14 @@
     },
     "problem": {
       "headline": "Jeśli doświadczasz...",
+      "subtitle": "Twoje ciało i umysł potrzebują pomocy",
       "symptom1": "Stres i napięcie",
-      "symptom_description1": "Których nie można złagodzić żadnym sposobem. Bez względu na to, jak bardzo próbujesz się zrelaksować lub odwrócić uwagę, nadal się utrzymują, negatywnie wpływając na Twoje samopoczucie.",
       "symptom2": "Ból pleców i szyi",
-      "symptom_description2": "Prowadzisz siedzący tryb życia i dużo pracujesz lub Twoja rutyna obejmuje intensywną aktywność fizyczną.",
       "symptom3": "Osłabiona odporność",
-      "symptom_description3": "Codziennie czujesz się słaby i apatyczny, a Twoje ciało stopniowo traci dobrą formę. Zauważyłeś, że częściej chorujesz i szybciej się męczysz.",
       "symptom4": "Problemy skórne",
-      "symptom_description4": "Zauważyłeś, że Twoja skóra wygląda na matową, zwiotczałą lub pojawiły się problemy z trądzikiem. Wszystko to może pogorszyć Twój nastrój i wpłynąć na ogólne samopoczucie."
+      "img_problem_alt": "Zmęczona kobieta doświadczająca stresu i wyczerpania. Oznaki wypalenia, napięcia mięśniowego i zmęczenia."
     },
-    "solution": {
-      "headline": "Nowe podejście do zdrowia",
-      "description": "W Wellness Studio łączymy profesjonalną terapię masażem z prowadzonymi zajęciami Nordic Walking, aby pomóc Ci odzyskać zdrowie, lepiej się poruszać i czuć się świetnie – każdego dnia."
-    },
+    "solution": "Znajdź idealny plan wellness dostosowany do potrzeb Twojego ciała.",
     "services": {
       "headline": "Dostosowane do Twoich potrzeb",
       "subtitle": "Usługi",

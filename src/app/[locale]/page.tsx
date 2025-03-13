@@ -1,11 +1,12 @@
 import ServiceCard from "@/components/ServiceCard";
 import Testimonials from "@/components/Testimonials";
 import { servicesItems } from "@/constants/servicesItems";
-import { callToAction, symptomsData } from "@/constants/symptomsData";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import ActionButton from "@/components/ActionLink";
+import SectionHeadline from "@/components/SectionHeadline";
+import SymptomCards from "@/components/SymptomCards";
 
 export default function Home() {
   const t = useTranslations("HomePage");
@@ -13,11 +14,11 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="min-h-screen bg-gradient-to-b from-green-50 to-cyan-50 px-5 py-20 lg:p-32">
+      <section className="md:min-h-screen bg-gradient-to-b from-green-50 to-cyan-50 px-5 pt-20 pb-6 lg:p-32">
         <div className="mx-auto flex flex-col justify-center items-center md:flex-row gap-8 lg:max-w-6xl">
           <Image
             src="/hero-img.jpg"
-            alt="Wellness"
+            alt={t("hero.img_hero_alt")}
             className="hidden md:block rounded-lg"
             width={400}
             height={400}
@@ -58,46 +59,35 @@ export default function Home() {
         </div>
       </section>
       {/* Symptoms Section */}
-      <section className="bg-bgBase p-sm md:p-md lg:px-lg">
-        <div className="max-w-full">
-          <h2 className="h2-custom mb-6 text-center md:text-left">
-            If You Are Experiencing...
-          </h2>
-
-          {/* Grid Layout for Two Rows on md */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Image Card (Ensures Full Fit) */}
-            <div className="h-full w-full md:my-2">
-              <Image
-                src="/stress-woman.jpg"
-                alt="Stressed Woman"
-                width={400}
-                height={400}
-                className="rounded-lg object-cover h-full w-full"
-              />
-            </div>
-            <div className="flex flex-col">
-              {/* Cards for Symptoms */}
-              {symptomsData.map((item, index) => (
-                <div
-                  key={index}
-                  className="bg-white p-5 m-2 rounded-lg shadow-sm h-full flex flex-col justify-start"
-                >
-                  <h4 className="font-rokkit text-textGreen text-2xl">
-                    {item.title}
-                  </h4>
-                  <p className="py-2 text-textGrey font-inter font-light text-sm">
-                    {item.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            {/* Call to Action Box */}
-            <div className="bg-accent p-5 md:my-2 rounded-lg shadow-sm h-full flex items-center justify-center">
-              <p className="py-2 text-white font-inter font-light text-sm">
-                {callToAction}
-              </p>
+      <section className="bg-bgBase px-4 py-6 md:p-16 lg:p-28">
+        <SectionHeadline
+          title={t("problem.headline")}
+          subTitle={t("problem.subtitle")}
+        />
+        <div className="grid grid-cols-2 gap-2  md:gap-6 md:grid-cols-4">
+          <div className="relative h-full w-full">
+            <Image
+              src="/stress-woman.jpg"
+              alt={t("img_problem_alt")}
+              fill
+              className="rounded-lg object-cover"
+            />
+          </div>
+          <div className="flex flex-col gap-2">
+            <SymptomCards
+              symptoms={[
+                t("problem.symptom1"),
+                t("problem.symptom2"),
+                t("problem.symptom3"),
+                t("problem.symptom4"),
+              ]}
+            />
+          </div>
+          <div className="col-span-2 bg-accent p-5 rounded-lg h-full flex items-center justify-center">
+            <div>
+              <h4 className="h4-custom text-white text-center">
+                {t("solution")}
+              </h4>
             </div>
           </div>
         </div>
