@@ -23,7 +23,6 @@
         "line4": "⫸ Grupy Nordic Walking"
       },
       "cta_book": "Zarezerwuj usługę",
-      "cta_learn": "Dowiedz się więcej",
       "cta_join": "Dołącz do grupy Nordic Walking",
       "img_hero_alt": "Terapeuta masażu w Edynburgu"
     },
@@ -34,23 +33,30 @@
       "symptom2": "Ból pleców i szyi",
       "symptom3": "Osłabiona odporność",
       "symptom4": "Problemy skórne",
-      "img_problem_alt": "Zmęczona kobieta doświadczająca stresu i wyczerpania. Oznaki wypalenia, napięcia mięśniowego i zmęczenia."
+      "img_problem_alt": "Zmęczona kobieta doświadczająca stresu i wyczerpania. Oznaki wypalenia, napięcia mięśniowego i zmęczenia.",
+      "cta_book_consultation": "Zarezerwuj bezpłatną konsultację"
     },
-    "solution": "Znajdź idealny plan wellness dostosowany do potrzeb Twojego ciała.",
+    "solution": "Znajdź idealny plan wellness dostosowany do potrzeb Twojego ciała",
     "services": {
       "headline": "Dostosowane do Twoich potrzeb",
       "subtitle": "Usługi",
       "service1": {
         "name": "Terapia masażem",
-        "description": "Złagodź ból, zredukuj stres i przywróć równowagę dzięki profesjonalnej terapii masażem. Niezależnie od tego, czy szukasz głębokiego relaksu, ulgi w bólu czy korekcji postawy, nasze indywidualne zabiegi – w tym masaż całego ciała, gorącymi kamieniami, drenaż limfatyczny i masaż przeciwstarzeniowy – pomogą Ci poczuć się najlepiej."
+        "description": "Złagodź ból, zmniejsz stres i przywróć równowagę dzięki profesjonalnej terapii masażem. Niezależnie od tego, czy szukasz głębokiego relaksu, ulgi w bólu czy korekcji postawy, nasze indywidualnie dopasowane zabiegi – w tym masaż całego ciała, gorącymi kamieniami, drenaż limfatyczny i masaż przeciwstarzeniowy – pomogą Ci poczuć się jak najlepiej.",
+        "imageUrl": "/massage.jpg",
+        "img_service_alt": "Profesjonalna terapia masażem w celu złagodzenia bólu, redukcji stresu i korekcji postawy. Masaż całego ciała, gorącymi kamieniami, drenaż limfatyczny i przeciwstarzeniowe zabiegi masażu dla głębokiego relaksu i dobrego samopoczucia."
       },
       "service2": {
         "name": "Indywidualne sesje",
-        "description": "Nasze spersonalizowane sesje korekcji postawy koncentrują się na identyfikacji nierównowagi, poprawie postawy i przywróceniu mobilności. Korzystając z terapii masażem i technik ruchowych, tworzymy indywidualny plan, który pomoże Ci poruszać się bez bólu."
+        "description": "Nasze spersonalizowane sesje korekcji postawy koncentrują się na identyfikacji zaburzeń równowagi, poprawie ustawienia ciała i przywracaniu mobilności. Korzystając z terapii masażem oraz technik ruchowych, tworzymy indywidualny plan, który pomoże Ci poruszać się bez bólu.",
+        "imageUrl": "/individual-training.jpg",
+        "img_service_alt": "Indywidualne sesje korekcji postawy w celu poprawy ustawienia ciała, przywrócenia mobilności i złagodzenia bólu. Dopasowana terapia masażem i techniki ruchowe dla lepszej postawy i swobodnego poruszania się bez bólu."
       },
       "service3": {
-        "name": "Grupy Nordic Walking",
-        "description": "Popraw swoją postawę, siłę i wytrzymałość dzięki Nordic Walking, treningowi angażującemu 90% mięśni. To ćwiczenie o niskim obciążeniu, ale bardzo skuteczne, odpowiednie dla wszystkich grup wiekowych – poprawia zdrowie sercowo-naczyniowe, spala kalorie i zwiększa mobilność stawów. Dodatkowo, to świetna okazja do poznania nowych ludzi i cieszenia się świeżym powietrzem."
+        "name": "Grupowe zajęcia Nordic Walking",
+        "description": "Popraw swoją postawę, siłę i wytrzymałość dzięki Nordic Walking – treningowi angażującemu 90% mięśni całego ciała. To mało obciążające, ale bardzo skuteczne ćwiczenie jest idealne dla osób w każdym wieku, wspomagając zdrowie serca, spalanie kalorii i poprawę mobilności stawów. Dodatkowo to świetna okazja do poznania nowych ludzi i spędzania czasu na świeżym powietrzu.",
+        "imageUrl": "/group-training.jpg",
+        "img_service_alt": "Grupowe treningi Nordic Walking poprawiające postawę, siłę i wytrzymałość. Niskoobciążający trening angażujący 90% mięśni, poprawiający zdrowie serca, spalający kalorie i zwiększający mobilność stawów w towarzyskiej atmosferze na świeżym powietrzu."
       },
       "cta_view_services": "Zobacz wszystkie usługi"
     },

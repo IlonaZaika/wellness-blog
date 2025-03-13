@@ -1,4 +1,4 @@
-import ServiceCard from "@/components/ServiceCard";
+import ServiceCard from "@/components/OfferItemCard";
 import { servicesItems } from "@/constants/servicesItems";
 
 export default function OfferSection() {

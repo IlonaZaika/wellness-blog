@@ -51,7 +51,7 @@ h6 {
 }
 
 .h4-custom {
-  @apply font-heading font-light text-[24px] my-2 sm:text-[24px] md:text-[28px] leading-[120%];
+  @apply font-heading text-[24px] my-2 sm:text-[24px] md:text-[28px] leading-[120%];
 }
 
 .h5-custom {

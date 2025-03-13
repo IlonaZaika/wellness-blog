@@ -33,23 +33,30 @@
       "symptom2": "Back and neck pain",
       "symptom3": "Weakened immunity",
       "symptom4": "Skin problems",
-      "img_problem_alt": "Tired woman experiencing stress and fatigue. Signs of burnout, muscle tension, and exhaustion."
+      "img_problem_alt": "Tired woman experiencing stress and fatigue. Signs of burnout, muscle tension, and exhaustion.",
+      "cta_book_consultation": "Book a Free Consultation"
     },
-    "solution": "Find the perfect wellness plan designed to your body’s needs.",
+    "solution": "Find the perfect wellness plan designed to your body’s needs",
     "services": {
       "headline": "Tailored to fit your needs",
       "subtitle": "Services",
       "service1": {
         "name": "Massage Therapy",
-        "description": "Relieve pain, reduce stress, and restore balance with expert massage therapy. Whether you're looking for deep relaxation, pain relief, or posture correction, our tailored treatments—including full body, hot stone, lymphatic drainage, and anti-aging massage—help you feel your best."
+        "description": "Relieve pain, reduce stress, and restore balance with expert massage therapy. Whether you're looking for deep relaxation, pain relief, or posture correction, our tailored treatments—including full body, hot stone, lymphatic drainage, and anti-aging massage—help you feel your best.",
+        "imageUrl": "/massage.jpg",
+        "img_service_alt": "Professional massage therapy for pain relief, stress reduction, and posture correction. Full body, hot stone, lymphatic drainage, and anti-aging massage treatments for deep relaxation and well-being."
       },
       "service2": {
         "name": "Personalized Sessions",
-        "description": "Our personalized posture correction sessions focus on identifying imbalances, improving alignment, and restoring mobility. Using massage therapy and movement-based techniques, we create a tailored plan to help you move pain-free."
+        "description": "Our personalized posture correction sessions focus on identifying imbalances, improving alignment, and restoring mobility. Using massage therapy and movement-based techniques, we create a tailored plan to help you move pain-free.",
+        "imageUrl": "/individual-training.jpg",
+        "img_service_alt": "Personalized posture correction sessions to improve alignment, restore mobility, and relieve pain. Tailored massage therapy and movement-based techniques for better posture and pain-free movement."
       },
       "service3": {
         "name": "Nordic Walking Groups",
-        "description": "Improve your posture, strength, and endurance with Nordic walking, a full-body workout that engages 90% of your muscles. This low-impact yet highly effective exercise is perfect for all ages, helping to improve cardiovascular health, burn calories, and enhance joint mobility. Plus, it's a great way to meet new people and enjoy the outdoors."
+        "description": "Improve your posture, strength, and endurance with Nordic walking, a full-body workout that engages 90% of your muscles. This low-impact yet highly effective exercise is perfect for all ages, helping to improve cardiovascular health, burn calories, and enhance joint mobility. Plus, it's a great way to meet new people and enjoy the outdoors.",
+        "imageUrl": "/group-training.jpg",
+        "img_service_alt": "Group Nordic walking training for posture improvement, full-body strength, and endurance. Low-impact exercise engaging 90% of muscles, enhancing cardiovascular health, burning calories, and improving joint mobility in a social outdoor setting."
       },
       "cta_view_services": "View All Services"
     },
