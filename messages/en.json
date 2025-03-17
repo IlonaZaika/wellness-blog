@@ -14,8 +14,11 @@
     },
     "hero": {
       "headline": "Live in a Healthy Body",
-      "subtitle": "Massage Therapy & Nordic Walking | Edinburgh",
-      "bio": "Hi, I am Iryna! An experienced massage therapist and certified Nordic Walking instructor with over 7 years of helping clients move freely, feel their best, and live pain-free",
+      "subtitle": {
+        "offer": "Massage Therapy & Nordic Walking",
+        "location": "Edinburgh"
+      },
+      "bio": "Hi, I am Iryna! An experienced massage therapist and certified Nordic Walking instructor with over 7 years of experience",
       "offer": {
         "line1": "⫸ Massage Therapy",
         "line2": "⫸ Facial Treatments",

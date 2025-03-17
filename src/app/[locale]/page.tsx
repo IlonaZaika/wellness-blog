@@ -23,7 +23,10 @@ export default function Home() {
             height={400}
           />
           <div className="text-center md:text-left">
-            <h3 className="h3-custom">{t("hero.subtitle")}</h3>
+            <h3 className="h3-custom">
+              <strong>{t("hero.subtitle.offer")}</strong>&nbsp;|&nbsp;
+              {t("hero.subtitle.location")}
+            </h3>
             <h1 className="h1-custom">{t("hero.headline")}</h1>
             <p className="p-custom">{t("hero.bio")}</p>
             <div className="my-5 flex flex-row items-center gap-2 md:hidden lg:hidden">

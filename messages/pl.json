@@ -14,7 +14,10 @@
     },
     "hero": {
       "headline": "Żyj w zdrowym ciele",
-      "subtitle": "Terapia masażem i Nordic Walking | Edynburg",
+      "subtitle": {
+        "offer": "Terapia masażem i Nordic Walking",
+        "location": "Edynburg"
+      },
       "bio": "Cześć, jestem Iryna! Doświadczona terapeutka masażu i certyfikowana instruktorka Nordic Walking z ponad 7-letnim doświadczeniem w pomaganiu klientom w swobodnym poruszaniu się, poczuciu się jak najlepiej i życiu bez bólu",
       "offer": {
         "line1": "⫸ Terapia masażem",
