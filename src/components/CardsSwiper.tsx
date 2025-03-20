@@ -31,14 +31,15 @@ export default function CardsSwiper<T extends CardProps>({
         slidesPerView={1}
         breakpoints={{
           640: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
+          760: { slidesPerView: 3 },
+          1400: { slidesPerView: 4 },
         }}
         navigation={{
           prevEl: ".prev-btn",
           nextEl: ".next-btn",
         }}
         pagination={{ clickable: true }}
-        className="w-[80vw] max-w-4xl relative pb-16"
+        className="w-[80vw] relative pb-16"
       >
         {cards.map((card, index) => (
           <SwiperSlide key={index} className="cursor-pointer">

@@ -11,7 +11,6 @@ function ReviewCard({ stars, text, date, company }: ReviewCardProps) {
     : expanded
       ? text
       : `${text.slice(0, MAX_CHAR)}...`;
-  console.log("render", displayedText);
 
   return (
     <div className="bg-white p-6 rounded-lg w-full h-full flex flex-col items-center justify-center shadow-md">

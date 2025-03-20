@@ -4,12 +4,8 @@ import { useTranslations } from "next-intl";
 import ActionButton from "@/components/ActionLink";
 import SectionHeadline from "@/components/SectionHeadline";
 import OfferItemCard from "@/components/Cards/OfferItemCard";
-import Swiper from "@/components/CardsSwiper";
 import SymptomCard from "@/components/Cards/SymptomCard";
-import GallerySwiper from "@/components/GallerySwiper";
-import Gallery from "@/components/Gallery";
-import CardsSwiper from "@/components/CardsSwiper";
-import { QualificationCardProps, ReviewCardProps } from "@/types/cardTypes";
+import { QualificationCardProps } from "@/types/cardTypes";
 
 export default function Home() {
   const t = useTranslations("HomePage");
@@ -58,65 +54,6 @@ export default function Home() {
       index: 6,
       imageSrc: "/certificate6.jpg",
       imageAlt: "/certificate6.jpg",
-    },
-  ];
-
-  const testimonials: ReviewCardProps[] = [
-    {
-      id: "1",
-      cardType: "review",
-      text: "The massage therapy sessions have truly changed my life. I feel more relaxed and rejuvenated than ever before!",
-      date: "May 17, 2023",
-      company: "Webflow",
-      stars: 5,
-    },
-    {
-      id: "2",
-      cardType: "review",
-      text: "The massage therapy sessions have truly changed my life. I feel more relaxed and rejuvenated than ever before!",
-      date: "May 17, 2023",
-      company: "Webflow",
-      stars: 5,
-    },
-    {
-      id: "3",
-      cardType: "review",
-      text: "The massage therapy sessions have truly changed my life. I feel more relaxed and rejuvenated than ever before!",
-      date: "May 17, 2023",
-      company: "Webflow",
-      stars: 5,
-    },
-    {
-      id: "4",
-      cardType: "review",
-      text: "The massage therapy sessions have truly changed my life. I feel more relaxed and rejuvenated than ever before!",
-      date: "May 17, 2023",
-      company: "Webflow",
-      stars: 5,
-    },
-    {
-      id: "5",
-      cardType: "review",
-      text: "The massage therapy sessions have truly changed my life. I feel more relaxed and rejuvenated than ever before!",
-      date: "May 17, 2023",
-      company: "Webflow",
-      stars: 5,
-    },
-    {
-      id: "6",
-      cardType: "review",
-      text: "The massage therapy sessions have truly changed my life. I feel more relaxed and rejuvenated than ever before!",
-      date: "May 17, 2023",
-      company: "Webflow",
-      stars: 5,
-    },
-    {
-      id: "7",
-      cardType: "review",
-      text: "The massage therapy sessions have truly changed my life. I feel more relaxed and rejuvenated than ever before!",
-      date: "May 17, 2023",
-      company: "Webflow",
-      stars: 5,
     },
   ];
 
@@ -171,7 +108,7 @@ export default function Home() {
         </div>
       </section>
       {/* Symptoms Section */}
-      <section className="bg-bgBase px-4 py-6 md:p-16 lg:p-28">
+      <section className="bg-bgBase px-4 py-6 md:p-16 lg:py-28 lg:px-52">
         <SectionHeadline
           title={t("problem.headline")}
           subTitle={t("problem.subtitle")}
@@ -191,7 +128,6 @@ export default function Home() {
                 key={index}
                 id={""}
                 symptomName={t(`problem.${key}`)}
-                cardType={"symptom"}
               />
             ))}
           </div>
@@ -213,7 +149,7 @@ export default function Home() {
         </div>
       </section>
       {/* Offer Section */}
-      <section className="px-4 py-6 md:p-16 lg:p-28">
+      <section className="px-4 py-6 md:p-16 lg:py-28 lg:px-52">
         <SectionHeadline
           title={t("services.headline")}
           subTitle={t("services.subtitle")}
@@ -227,13 +163,12 @@ export default function Home() {
               imageUrl={t(`services.${key}.imageUrl`)}
               imageAlt={t(`services.${key}.img_service_alt`)}
               description={t(`services.${key}.description`)}
-              cardType={"offer"}
             />
           ))}
         </div>
       </section>
       {/* Testimonials Section */}
-      <section className="bg-bgBase px-4 py-6 md:p-16 lg:p-28">
+      <section className="bg-bgBase px-4 py-6 md:p-16 lg:py-28 lg:px-52">
         <SectionHeadline
           title={t("testimonials.headline")}
           subTitle={t("testimonials.subtitle")}
@@ -245,7 +180,7 @@ export default function Home() {
       </section>
       <section
         className="bg-accent text-center px-4 py-8
-       md:p-16 lg:p-24"
+       md:p-16 lg:py-28 lg:px-52"
       >
         <h2 className="h2-custom text-white">{t("cta_final.headline")}</h2>
         <div className="flex justify-center">
