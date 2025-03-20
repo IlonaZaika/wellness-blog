@@ -3,12 +3,122 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import ActionButton from "@/components/ActionLink";
 import SectionHeadline from "@/components/SectionHeadline";
-import SymptomCards from "@/components/SymptomCards";
-import OfferItemCard from "@/components/OfferItemCard";
+import OfferItemCard from "@/components/Cards/OfferItemCard";
+import Swiper from "@/components/CardsSwiper";
+import SymptomCard from "@/components/Cards/SymptomCard";
+import GallerySwiper from "@/components/GallerySwiper";
+import Gallery from "@/components/Gallery";
+import CardsSwiper from "@/components/CardsSwiper";
+import { QualificationCardProps, ReviewCardProps } from "@/types/cardTypes";
 
 export default function Home() {
   const t = useTranslations("HomePage");
   const serviceKeys = ["service1", "service2", "service3"];
+  const symptomKeys = ["symptom1", "symptom2", "symptom3", "symptom4"];
+
+  const imageCards: QualificationCardProps[] = [
+    {
+      id: "1",
+      cardType: "qualification",
+      index: 1,
+      imageSrc: "/certificate1.jpg",
+      imageAlt: "/certificate1.jpg",
+    },
+    {
+      id: "2",
+      cardType: "qualification",
+      index: 2,
+      imageSrc: "/certificate2.jpg",
+      imageAlt: "/certificate2.jpg",
+    },
+    {
+      id: "3",
+      cardType: "qualification",
+      index: 3,
+      imageSrc: "/certificate3.jpg",
+      imageAlt: "/certificate3.jpg",
+    },
+    {
+      id: "4",
+      cardType: "qualification",
+      index: 4,
+      imageSrc: "/certificate4.jpg",
+      imageAlt: "/certificate4.jpg",
+    },
+    {
+      id: "5",
+      cardType: "qualification",
+      index: 5,
+      imageSrc: "/certificate5.jpg",
+      imageAlt: "/certificate5.jpg",
+    },
+    {
+      id: "6",
+      cardType: "qualification",
+      index: 6,
+      imageSrc: "/certificate6.jpg",
+      imageAlt: "/certificate6.jpg",
+    },
+  ];
+
+  const testimonials: ReviewCardProps[] = [
+    {
+      id: "1",
+      cardType: "review",
+      text: "The massage therapy sessions have truly changed my life. I feel more relaxed and rejuvenated than ever before!",
+      date: "May 17, 2023",
+      company: "Webflow",
+      stars: 5,
+    },
+    {
+      id: "2",
+      cardType: "review",
+      text: "The massage therapy sessions have truly changed my life. I feel more relaxed and rejuvenated than ever before!",
+      date: "May 17, 2023",
+      company: "Webflow",
+      stars: 5,
+    },
+    {
+      id: "3",
+      cardType: "review",
+      text: "The massage therapy sessions have truly changed my life. I feel more relaxed and rejuvenated than ever before!",
+      date: "May 17, 2023",
+      company: "Webflow",
+      stars: 5,
+    },
+    {
+      id: "4",
+      cardType: "review",
+      text: "The massage therapy sessions have truly changed my life. I feel more relaxed and rejuvenated than ever before!",
+      date: "May 17, 2023",
+      company: "Webflow",
+      stars: 5,
+    },
+    {
+      id: "5",
+      cardType: "review",
+      text: "The massage therapy sessions have truly changed my life. I feel more relaxed and rejuvenated than ever before!",
+      date: "May 17, 2023",
+      company: "Webflow",
+      stars: 5,
+    },
+    {
+      id: "6",
+      cardType: "review",
+      text: "The massage therapy sessions have truly changed my life. I feel more relaxed and rejuvenated than ever before!",
+      date: "May 17, 2023",
+      company: "Webflow",
+      stars: 5,
+    },
+    {
+      id: "7",
+      cardType: "review",
+      text: "The massage therapy sessions have truly changed my life. I feel more relaxed and rejuvenated than ever before!",
+      date: "May 17, 2023",
+      company: "Webflow",
+      stars: 5,
+    },
+  ];
 
   return (
     <div>
@@ -76,14 +186,14 @@ export default function Home() {
             />
           </div>
           <div className="flex flex-col gap-2">
-            <SymptomCards
-              symptoms={[
-                t("problem.symptom1"),
-                t("problem.symptom2"),
-                t("problem.symptom3"),
-                t("problem.symptom4"),
-              ]}
-            />
+            {symptomKeys.map((key, index) => (
+              <SymptomCard
+                key={index}
+                id={""}
+                symptomName={t(`problem.${key}`)}
+                cardType={"symptom"}
+              />
+            ))}
           </div>
           <div className="col-span-2 bg-accent p-5 rounded-lg h-full flex items-end justify-center">
             <div>
@@ -112,10 +222,12 @@ export default function Home() {
           {serviceKeys.map((key, index) => (
             <OfferItemCard
               key={index}
+              id={""}
               title={t(`services.${key}.name`)}
               imageUrl={t(`services.${key}.imageUrl`)}
               imageAlt={t(`services.${key}.img_service_alt`)}
               description={t(`services.${key}.description`)}
+              cardType={"offer"}
             />
           ))}
         </div>

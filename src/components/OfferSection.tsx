@@ -1,4 +1,4 @@
-import ServiceCard from "@/components/OfferItemCard";
+import OfferItemCard from "@/components/Cards/OfferItemCard";
 import { servicesItems } from "@/constants/servicesItems";
 
 export default function OfferSection() {
@@ -9,11 +9,12 @@ export default function OfferSection() {
         <h2 className="h2-custom">Tailored to fit your needs</h2>
         <div className="grid md:grid-cols-3 gap-6">
           {servicesItems.map((item, index) => (
-            <ServiceCard
+            <OfferItemCard
               key={index}
               title={item.title}
               imageUrl={item.imageUrl}
               description={item.description}
+              imageAlt={""}
             />
           ))}
         </div>

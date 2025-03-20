@@ -1,19 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import { OfferItemCardProps } from "@/types/cardTypes";
 
-interface OfferItemCardProps {
-  title: string;
-  imageUrl: string;
-  imageAlt: string;
-  description: string;
-}
-
-const OfferItemCard: React.FC<OfferItemCardProps> = ({
+function OfferItemCard({
   title,
   imageUrl,
   imageAlt,
   description,
-}) => {
+}: OfferItemCardProps) {
   return (
     <div className="bg-bgBase rounded-lg overflow-hidden">
       <div className="relative w-full h-56">
@@ -27,6 +21,6 @@ const OfferItemCard: React.FC<OfferItemCardProps> = ({
       </div>
     </div>
   );
-};
+}
 
 export default OfferItemCard;

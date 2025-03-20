@@ -17,6 +17,7 @@ export default {
         textGreen: "var(--color-text-green)",
         textGrey: "var(--color-text-grey)",
         bgLight: "var(--color-text-light)",
+        surface: "var(--color-surface)",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
