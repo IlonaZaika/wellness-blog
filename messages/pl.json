@@ -89,5 +89,38 @@
       "instagram": "Instagram",
       "location": "Edynburg, Szkocja"
     }
-  }
+  },
+  "AboutPage": {
+    "ourMission": {
+      "title": "Nasza Misja",
+      "description": "At Wellness Studio, our mission is to help you move freely, feel strong, and live without limits..."
+    },
+    "aboutMe": {
+      "title": "O Mnie",
+      "subtitle": "Wiadomość od Założycielki",
+      "description": "In 2006, my life changed in an instant..."
+    },
+    "qualifications": {
+      "items": [
+        {
+          "name": "Certyfikowany Specjalista Masażu Kobido",
+          "description": "Iryna jest mistrzynią masażu liftingującego Kobido, zaawansowanej japońskiej techniki, która naturalnie modeluje i odmładza skórę."
+        },
+        {
+          "name": "Dyplom Zawodowy z Terapii Masażem",
+          "description": "Dzięki solidnej wiedzy z zakresu anatomii, fizjologii i korekcji postawy, Iryna posiada dyplom zawodowy z terapii masażem. Jej doświadczenie obejmuje różne techniki masażu, w tym: masaż sportowy, masaż leczniczy, anatomię palpacyjną, masaż Abhyanga, terapię bańkami i zabiegi na ciało."
+        },
+        {
+          "name": "Certyfikowany Instruktor Nordic Walking",
+          "description": "Jako certyfikowany instruktor Nordic Walking, Iryna promuje aktywne zdrowie poprzez tę kompleksową, niskointensywną formę treningu, poprawiającą wytrzymałość, postawę i ogólne zdrowie."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "Co Mówią Nasi Klienci",
+      "subtitle": "Opinie",
+      "description": "Hear from our clients and discover how our personalized wellness approach has improved their lives."
+    }
+  },
+  "ContactPage": {}
 }

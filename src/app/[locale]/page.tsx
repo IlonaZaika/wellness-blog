@@ -5,57 +5,11 @@ import ActionButton from "@/components/ActionLink";
 import SectionHeadline from "@/components/SectionHeadline";
 import OfferItemCard from "@/components/Cards/OfferItemCard";
 import SymptomCard from "@/components/Cards/SymptomCard";
-import { QualificationCardProps } from "@/types/cardTypes";
 
 export default function Home() {
   const t = useTranslations("HomePage");
   const serviceKeys = ["service1", "service2", "service3"];
   const symptomKeys = ["symptom1", "symptom2", "symptom3", "symptom4"];
-
-  const imageCards: QualificationCardProps[] = [
-    {
-      id: "1",
-      cardType: "qualification",
-      index: 1,
-      imageSrc: "/certificate1.jpg",
-      imageAlt: "/certificate1.jpg",
-    },
-    {
-      id: "2",
-      cardType: "qualification",
-      index: 2,
-      imageSrc: "/certificate2.jpg",
-      imageAlt: "/certificate2.jpg",
-    },
-    {
-      id: "3",
-      cardType: "qualification",
-      index: 3,
-      imageSrc: "/certificate3.jpg",
-      imageAlt: "/certificate3.jpg",
-    },
-    {
-      id: "4",
-      cardType: "qualification",
-      index: 4,
-      imageSrc: "/certificate4.jpg",
-      imageAlt: "/certificate4.jpg",
-    },
-    {
-      id: "5",
-      cardType: "qualification",
-      index: 5,
-      imageSrc: "/certificate5.jpg",
-      imageAlt: "/certificate5.jpg",
-    },
-    {
-      id: "6",
-      cardType: "qualification",
-      index: 6,
-      imageSrc: "/certificate6.jpg",
-      imageAlt: "/certificate6.jpg",
-    },
-  ];
 
   return (
     <div>
@@ -68,6 +22,8 @@ export default function Home() {
             className="hidden md:block rounded-lg"
             width={400}
             height={400}
+            priority
+            style={{ width: "auto", height: "auto" }}
           />
           <div className="text-center md:text-left">
             <h3 className="h3-custom">
@@ -83,6 +39,8 @@ export default function Home() {
                 className="rounded-lg"
                 width={170}
                 height={230}
+                priority
+                style={{ width: "auto", height: "auto" }}
               />
               <ul className="p-custom text-left">
                 <li className="py-2">{t("hero.offer.line1")}</li>
@@ -119,6 +77,8 @@ export default function Home() {
               src="/stress-woman.jpg"
               alt={t("problem.img_problem_alt")}
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              priority
               className="rounded-lg object-cover"
             />
           </div>

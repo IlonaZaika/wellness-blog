@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { QualificationCardProps } from "@/types/cardTypes";
 
 function QualificationCard({
-  imageSrc,
+  imageUrl,
   imageAlt,
   id,
   setPreviewImage,
@@ -22,10 +22,10 @@ function QualificationCard({
         opacity: hovered === id ? 1 : 0.8,
       }}
       transition={{ duration: 0.3 }}
-      onClick={() => setPreviewImage(imageSrc)}
+      onClick={() => (setPreviewImage ? setPreviewImage(imageUrl) : "")}
     >
       <Image
-        src={imageSrc}
+        src={imageUrl}
         alt={imageAlt}
         width={300}
         height={200}

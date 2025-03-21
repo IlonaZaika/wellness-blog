@@ -1,50 +1,52 @@
-import { useState } from "react";
+"use client";
+
+import { useEffect, useRef, useState } from "react";
 import { ReviewCardProps } from "@/types/cardTypes";
 import { Star } from "lucide-react";
 
 function ReviewCard({ stars, text, date, company }: ReviewCardProps) {
-  const [expanded, setExpanded] = useState(false);
-  const MAX_CHAR = 40; // Maximum characters before truncating
-  const isTextLong = text.length > MAX_CHAR;
-  const displayedText = !isTextLong
-    ? text
-    : expanded
-      ? text
-      : `${text.slice(0, MAX_CHAR)}...`;
+  const [maxHeight, setMaxHeight] = useState<number | null>(null);
+  const cardRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (cardRef.current) {
+      const updateHeight = () => {
+        const allCards = document.querySelectorAll(".review-card");
+        const heights = Array.from(allCards).map(
+          (card) => card.getBoundingClientRect().height
+        );
+        setMaxHeight(Math.max(...heights));
+      };
+
+      updateHeight();
+      window.addEventListener("resize", updateHeight);
+      return () => window.removeEventListener("resize", updateHeight);
+    }
+  }, []);
 
   return (
-    <div className="bg-white p-6 rounded-lg w-full h-full flex flex-col items-center justify-center shadow-md">
+    <div
+      ref={cardRef}
+      className="review-card bg-white p-6 rounded-lg w-full flex flex-col justify-between shadow-md"
+      style={{ height: maxHeight ? `${maxHeight}px` : "auto" }}
+    >
       {/* Star Ratings */}
-      <div className="flex gap-1 mb-3 justify-center">
+      <div className="flex gap-1 mb-2 justify-center">
         {[...Array(stars)].map((_, i) => (
           <Star key={i} size={18} className="text-yellow-500 fill-yellow-500" />
         ))}
       </div>
 
       {/* Review Text Container */}
-      <div
-        className={`flex-1 p-2 p-custom transition-all flex items-center text-center ${
-          isTextLong ? "overflow-y-auto max-h-[150px]" : "items-center"
-        }`}
-      >
-        {displayedText}
+      <div className="flex-1 p-custom flex items-center justify-center text-center">
+        {text}
       </div>
 
-      {/* Show More / Show Less Button */}
-      {isTextLong && (
-        <button
-          onClick={() => setExpanded(!expanded)}
-          className="font-inter text-accent text-sm hover:underline"
-        >
-          {expanded ? "Show Less" : "Show More"}
-        </button>
-      )}
-
       {/* Review Metadata */}
-      <div className="mt-4 text-sm text-textGrey font-inter flex items-center gap-2 pb-4 justify-center">
+      <div className="mt-4 text-sm text-textGrey flex items-center gap-2 justify-center">
         <span>{date}</span>
-        <span className="w-px h-4 bg-textGrey"></span>
-        <span className="text-textGrey">{company}</span>
+        <span className="w-px h-4 text-textGreen border border-l-textGrey"></span>
+        <span>{company}</span>
       </div>
     </div>
   );

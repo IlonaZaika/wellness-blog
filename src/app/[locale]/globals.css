@@ -90,3 +90,8 @@ h6 {
 .nav-link {
   @apply font-inter font-light text-textGreen text-sm hover:text-accent cursor-pointer;
 }
+
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 18px; /* Adjust this value as needed */
+}

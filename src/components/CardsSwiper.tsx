@@ -39,13 +39,21 @@ export default function CardsSwiper<T extends CardProps>({
           nextEl: ".next-btn",
         }}
         pagination={{ clickable: true }}
-        className="w-[80vw] relative pb-16"
+        className="w-[80vw]"
       >
         {cards.map((card, index) => (
           <SwiperSlide key={index} className="cursor-pointer">
-            <div className="p-2 relative w-[300px] h-[250px] mx-auto mb-10 overflow-hidden transition-transform hover:scale-105">
-              {renderCard(card)}
-            </div>
+            {hasPreviewModal ? (
+              <div
+                onClick={() =>
+                  setPreviewImage(card.imageUrl ? card.imageUrl : "")
+                }
+              >
+                {renderCard(card)}
+              </div>
+            ) : (
+              renderCard(card)
+            )}
           </SwiperSlide>
         ))}
       </Swiper>

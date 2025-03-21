@@ -1,5 +1,7 @@
 export interface CardProps {
   id: string;
+  imageUrl?: string;
+  setPreviewImage?: (src: string | null) => void;
 }
 
 export interface ReviewCardProps extends CardProps {
@@ -10,10 +12,8 @@ export interface ReviewCardProps extends CardProps {
 }
 
 export interface QualificationCardProps extends CardProps {
-  index: number;
-  imageSrc: string;
+  imageUrl: string;
   imageAlt: string;
-  setPreviewImage: (src: string | null) => void;
 }
 
 export interface OfferItemCardProps extends CardProps {

@@ -91,19 +91,38 @@
     }
   },
   "AboutPage": {
-    "mission": {
-      "headline": "Our Mission",
-      "content": "At Wellness Studio, our mission is to help you move freely, feel strong, and live without limits. "
+    "ourMission": {
+      "title": "Our Mission",
+      "description": "At Wellness Studio, our mission is to help you move freely, feel strong, and live without limits. We believe that true wellness comes from balance — between body and mind, strength and relaxation, movement and stillness.\nFounded by Iryna, an experienced massage therapist and certified Nordic Walking Instructor, Wellness Studio is more than just a place for healing — it is a space for transformation. With over seven years of expertise in therapeutic massage, posture correction, and holistic movement, Iryna combines scientific knowledge with a deep passion for helping others.\nAt Wellness Studio, we offer a tailored approach to healing, combining advanced massage techniques with movement-based therapies like Nordic Walking. Whether you are recovering from injury, seeking relief from chronic pain, or looking to enhance your overall vitality, we are here to support you — every step of the way. You are never too old, too injured, or too late to start. Let's move forward — together."
     },
-    "about": {
-      "headline": "About Me",
+    "aboutMe": {
+      "title": "About Me",
       "subtitle": "Message from the Founder",
-      "content": {
-        "p1": "In 2006, my life changed in an instant.",
-        "p2": "In 2006, my life changed in an instant.",
-        "p3": "In 2006, my life changed in an instant."
-      },
-      "img_about_hero_alt": "Massage Therapist in Edinburgh"
+      "description": "In 2006, my life changed in an instant. A broken leg, four surgeries, and a long rehabilitation process left me facing a future filled with uncertainty. Doctors couldn't guarantee that I would ever walk, run, or dance again. But I refused to accept those limitations. Through dedicated training, expert guidance, and relentless perseverance, I not only regained my mobility—I discovered a passion for movement, healing, and helping others do the same.\n\nThis journey led me to study massage therapy, anatomy, and movement science. Over the years, I have had the privilege of working with people of all ages and backgrounds, guiding them toward stronger, healthier bodies. What I've learned is simple: movement is freedom. Pain and stiffness should never hold you back from living fully. That's why I created this space—to support, inspire, and empower you on your own journey to wellness. Whether through massage, posture-focused exercises, or Nordic walking, my mission is to help you feel comfortable, capable, and confident in your body. You are never too old, too injured, or too late to start. Let's move forward—together.",
+      "goodby": "With love, Iryna"
+    },
+    "qualifications": {
+      "title": "Qualifications",
+      "subtitle": "Experience, Certification, and Passion Combined",
+      "items": [
+        {
+          "name": "Certified Kobido Lifting Massage Specialist",
+          "description": "Iryna is a master of Kobido lifting massage, an advanced Japanese technique that naturally sculpts and rejuvenates the skin."
+        },
+        {
+          "name": "Professional Diploma in Massage Therapy",
+          "description": "With a strong foundation in anatomy, physiology, and posture correction, Iryna holds a professional diploma in massage therapy. Her expertise covers various massage techniques, including: Sport Massage, Medical Massage, Palpation Anatomy, Abhyanga Massage, Cupping Massage & Body Treatments."
+        },
+        {
+          "name": "Certified Nordic Walking Instructor",
+          "description": "As a Certified Nordic Walking Instructor, Iryna promotes active wellness through this full-body, low-impact workout, enhancing endurance, posture, and overall health."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "What Our Customers Say",
+      "subtitle": "Testimonials",
+      "description": "Hear from our clients and discover how our personalized wellness approach has improved their lives."
     }
   },
   "ContactPage": {}

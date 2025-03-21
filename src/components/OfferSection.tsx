@@ -11,6 +11,7 @@ export default function OfferSection() {
           {servicesItems.map((item, index) => (
             <OfferItemCard
               key={index}
+              id={`${index}`}
               title={item.title}
               imageUrl={item.imageUrl}
               description={item.description}

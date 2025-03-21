@@ -26,11 +26,11 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <div className="relative inline-block">
+    <div className="relative inline-block py-2 px-4">
       {/* Button to Open Dropdown */}
       <button
-        className="flex items-center gap-2 nav-link"
-        onMouseEnter={() => toggleDropdown(true)}
+        className="flex items-center gap-2 nav-link text-sm"
+        onClick={() => toggleDropdown(true)}
       >
         <span className="text-lg">{currentLanguage.flag} ▾</span>
       </button>
@@ -41,10 +41,9 @@ export default function LanguageSwitcher() {
           className="absolute left-0 mt-2 w-24 md:bg-white md:shadow-lg md:rounded-md"
           onMouseEnter={() => toggleDropdown(true)}
           onMouseLeave={() => toggleDropdown(false)}
-          onClick={() => toggleDropdown(!isOpen)}
         >
           {languageLinks.map((lang) => (
-            <li key={lang.name} className="px-4 py-2 nav-link">
+            <li key={lang.name} className="py-2 nav-link md:px-4">
               <button
                 className="flex items-center gap-2 w-full text-left"
                 onClick={() => handleLanguageChange(lang)}
