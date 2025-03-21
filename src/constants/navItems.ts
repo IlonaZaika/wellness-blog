@@ -1,11 +1,14 @@
-// constants/navItems.ts
+export interface NavItem {
+  name: string;
+  href: string;
+  hasServicesInside?: boolean;
+}
 
-export const navItems = [
+export const navItems: NavItem[] = [
   { name: "Home", href: "/" },
-  { name: "Services", href: "/services", hasServicesInside: "true" },
+  { name: "Services", href: "/services", hasServicesInside: true },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
-  { name: "Blog", href: "/blog" },
 ];
 
 export const serviceLinks = [
@@ -16,7 +19,7 @@ export const serviceLinks = [
 ];
 
 export const languageLinks = [
-  { name: "EN", href: "/?lang=en" },
-  { name: "UA", href: "/?lang=ua" },
-  { name: "PL", href: "/?lang=pl" },
+  { name: "EN", href: "/?lang=en", flag: "🇬🇧" },
+  { name: "UA", href: "/?lang=ua", flag: "🇺🇦" },
+  { name: "PL", href: "/?lang=pl", flag: "🇵🇱" },
 ];

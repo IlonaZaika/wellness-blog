@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import { X } from "lucide-react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
@@ -31,7 +31,7 @@ export default function CardsSwiper<T extends CardProps>({
         slidesPerView={1}
         breakpoints={{
           640: { slidesPerView: 2 },
-          760: { slidesPerView: 3 },
+          710: { slidesPerView: 3 },
           1400: { slidesPerView: 4 },
         }}
         navigation={{

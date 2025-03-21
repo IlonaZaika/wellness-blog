@@ -87,6 +87,6 @@ h6 {
   @apply font-inter font-light border border-accent text-accent rounded-2xl hover:bg-accent hover:text-bgLight p-3 sm:px-6 text-[14px] sm:text-[16px];
 }
 
-.link {
-  @apply hover:text-accent cursor-pointer;
+.nav-link {
+  @apply font-inter font-light text-textGreen text-sm hover:text-accent cursor-pointer;
 }

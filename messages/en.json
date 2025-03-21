@@ -72,7 +72,7 @@
     },
     "cta_final": {
       "headline": "Ready To Transform Your Health?",
-      "cta_book": "Start Your Journey Now "
+      "cta_book": "Get a Free Consultation"
     },
     "footer": {
       "subscription": {
@@ -89,5 +89,22 @@
       "instagram": "Instagram",
       "location": "Edinburgh, Scotland"
     }
-  }
+  },
+  "AboutPage": {
+    "mission": {
+      "headline": "Our Mission",
+      "content": "At Wellness Studio, our mission is to help you move freely, feel strong, and live without limits. "
+    },
+    "about": {
+      "headline": "About Me",
+      "subtitle": "Message from the Founder",
+      "content": {
+        "p1": "In 2006, my life changed in an instant.",
+        "p2": "In 2006, my life changed in an instant.",
+        "p3": "In 2006, my life changed in an instant."
+      },
+      "img_about_hero_alt": "Massage Therapist in Edinburgh"
+    }
+  },
+  "ContactPage": {}
 }
