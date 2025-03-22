@@ -66,7 +66,7 @@ export default function Home() {
         </div>
       </section>
       {/* Symptoms Section */}
-      <section className="bg-bgBase px-4 py-6 md:p-16 lg:py-28 lg:px-52">
+      <section className="bg-bgBase section-spacing">
         <SectionHeadline
           title={t("problem.headline")}
           subTitle={t("problem.subtitle")}
@@ -109,7 +109,7 @@ export default function Home() {
         </div>
       </section>
       {/* Offer Section */}
-      <section className="px-4 py-6 md:p-16 lg:py-28 lg:px-52">
+      <section className="section-spacing">
         <SectionHeadline
           title={t("services.headline")}
           subTitle={t("services.subtitle")}
@@ -128,7 +128,7 @@ export default function Home() {
         </div>
       </section>
       {/* Testimonials Section */}
-      <section className="bg-bgBase px-4 py-6 md:p-16 lg:py-28 lg:px-52">
+      <section className="bg-bgBase section-spacing">
         <SectionHeadline
           title={t("testimonials.headline")}
           subTitle={t("testimonials.subtitle")}
@@ -138,10 +138,7 @@ export default function Home() {
         </p>
         <Testimonials />
       </section>
-      <section
-        className="bg-accent text-center px-4 py-8
-       md:p-16 lg:py-28 lg:px-52"
-      >
+      <section className="bg-accent text-center section-spacing">
         <h2 className="h2-custom text-white">{t("cta_final.headline")}</h2>
         <div className="flex justify-center">
           <ActionButton

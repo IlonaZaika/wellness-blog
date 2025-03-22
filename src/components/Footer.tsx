@@ -68,7 +68,7 @@ const Footer = () => {
 
       <div className="border-t border-bgLight mt-8 pt-3 text-xs text-center">
         <p className="px-6 pt-1">
-          © 2024 Wellness Studio. All rights reserved. ·
+          © 2024 Wellness Studio. All rights reserved.
           <Link href="#" className="link pl-1">
             Website by Ilona Zaika
           </Link>

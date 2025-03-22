@@ -30,7 +30,7 @@ export default function LanguageSwitcher() {
       {/* Button to Open Dropdown */}
       <button
         className="flex items-center gap-2 nav-link text-sm"
-        onClick={() => toggleDropdown(true)}
+        onClick={() => toggleDropdown(!isOpen)}
       >
         <span className="text-lg">{currentLanguage.flag} ▾</span>
       </button>
@@ -43,7 +43,7 @@ export default function LanguageSwitcher() {
           onMouseLeave={() => toggleDropdown(false)}
         >
           {languageLinks.map((lang) => (
-            <li key={lang.name} className="py-2 nav-link md:px-4">
+            <li key={lang.name} className="py-2 nav-link px-4">
               <button
                 className="flex items-center gap-2 w-full text-left"
                 onClick={() => handleLanguageChange(lang)}

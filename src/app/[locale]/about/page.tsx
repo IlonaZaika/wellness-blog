@@ -9,9 +9,9 @@ export default function About() {
   const qualificationsItems = t.raw("qualifications.items");
 
   return (
-    <div className="min-h-screen mt-16">
+    <div className="min-h-screen mt-12">
       {/* Our Mission Section */}
-      <section className="p-sm md:p-md lg:px-lg flex justify-center bg-accent">
+      <section className="flex justify-center bg-accent section-spacing">
         <div className="px-6 md:w-3/5 pb-16 pt-10">
           <h2 className="h2-custom text-white text-center">
             {t("ourMission.title")}
@@ -22,7 +22,7 @@ export default function About() {
         </div>
       </section>
       {/* About Me Section */}
-      <section className="bg-bgBase p-sm md:p-md lg:px-lg flex justify-center">
+      <section className="bg-bgBase flex justify-center section-spacing">
         <div className="flex flex-col md:flex-row br-bgBase items-center max-w-6xl w-full">
           <div className="p-sm md:w-1/2 mx-auto text-center md:text-left mr-8">
             <SectionHeadline
@@ -45,7 +45,7 @@ export default function About() {
       </section>
 
       {/* Qualifications Section */}
-      <section className="p-sm md:p-md lg:px-lg">
+      <section className="section-spacing ">
         <div className="lg:gap-5">
           <SectionHeadline
             title={t("qualifications.title")}
@@ -73,14 +73,12 @@ export default function About() {
         </div>
       </section>
       {/* Testimonials Section */}
-      <section className="bg-bgBase p-sm md:p-md lg:px-lg">
-        <h3 className="h3-custom">Testimonials</h3>
-
-        <h2 className="h2-custom">What Our Customers Say</h2>
-        <p className="p-custom">
-          Hear from our clients and discover how our personalized wellness
-          approach has improved their lives
-        </p>
+      <section className="bg-bgBase section-spacing">
+        <SectionHeadline
+          title={t("testimonials.title")}
+          subTitle={t("testimonials.subtitle")}
+        />
+        <p className="p-custom">{t("testimonials.description")}</p>
         <Testimonials />
       </section>
     </div>
