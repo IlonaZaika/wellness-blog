@@ -98,9 +98,12 @@
     "aboutMe": {
       "title": "O Mnie",
       "subtitle": "Wiadomość od Założycielki",
-      "description": "In 2006, my life changed in an instant..."
+      "description": "In 2006, my life changed in an instant...",
+      "goodby": "With love, Iryna"
     },
     "qualifications": {
+      "title": "Кваліфікація",
+      "subtitle": "Досвід, Certification, and Passion Combined",
       "items": [
         {
           "name": "Certyfikowany Specjalista Masażu Kobido",
@@ -122,5 +125,34 @@
       "description": "Hear from our clients and discover how our personalized wellness approach has improved their lives."
     }
   },
-  "ContactPage": {}
+  "ContactPage": {
+    "address": {
+      "title": "Adres",
+      "content": "A108 Adam Street, Nowy Jork, NY 535022"
+    },
+    "whatsapp": {
+      "title": "WhatsApp",
+      "content": "+1 5589 55488 55"
+    },
+    "email": {
+      "title": "Email",
+      "content": "info@example.com"
+    },
+    "opening_hours": {
+      "title": "Godziny Otwarcia",
+      "content": {
+        "mon_sat": "Pon-Sob: 11:00 - 23:00",
+        "sunday": "Niedziela: Zamknięte"
+      }
+    },
+    "contact_form": {
+      "title": "Skontaktuj się z nami",
+      "form": {
+        "name_placeholder": "Twoje Imię",
+        "email_placeholder": "Twój Email",
+        "message_placeholder": "Wiadomość",
+        "submit_button": "Wyślij Wiadomość"
+      }
+    }
+  }
 }

@@ -98,9 +98,12 @@
     "aboutMe": {
       "title": "Про Мене",
       "subtitle": "Послання від Засновника",
-      "description": "In 2006, my life changed in an instant..."
+      "description": "In 2006, my life changed in an instant...",
+      "goodby": "With love, Iryna"
     },
     "qualifications": {
+      "title": "Кваліфікація",
+      "subtitle": "Досвід, Certification, and Passion Combined",
       "items": [
         {
           "name": "Сертифікований спеціаліст з масажу Кобідо",
@@ -122,5 +125,34 @@
       "description": "Hear from our clients and discover how our personalized wellness approach has improved their lives."
     }
   },
-  "ContactPage": {}
+  "ContactPage": {
+    "address": {
+      "title": "Адреса",
+      "content": "Вулиця Адам, 108, Нью-Йорк, NY 535022"
+    },
+    "whatsapp": {
+      "title": "WhatsApp",
+      "content": "+1 5589 55488 55"
+    },
+    "email": {
+      "title": "Електронна пошта",
+      "content": "info@example.com"
+    },
+    "opening_hours": {
+      "title": "Години роботи",
+      "content": {
+        "mon_sat": "Пн-Сб: 11:00 - 23:00",
+        "sunday": "Неділя: Закрито"
+      }
+    },
+    "contact_form": {
+      "title": "Зв'яжіться з нами",
+      "form": {
+        "name_placeholder": "Ваше ім'я",
+        "email_placeholder": "Ваш email",
+        "message_placeholder": "Повідомлення",
+        "submit_button": "Відправити повідомлення"
+      }
+    }
+  }
 }
