@@ -58,7 +58,9 @@ export default function Contact() {
             </div>
           </div>
           <div>
-            <h2 className="h2-custom">{t("contact_form.title")}</h2>
+            <h2 className="h2-custom text-center md:text-left">
+              {t("contact_form.title")}
+            </h2>
 
             <form className="font-inter font-light text-white text-[13px]">
               <input
