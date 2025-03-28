@@ -13,6 +13,7 @@ const languageLinks: LanguageLink[] = [
   { name: "EN", href: "en", flag: "🇬🇧" },
   { name: "UA", href: "ua", flag: "🇺🇦" },
   { name: "PL", href: "pl", flag: "🇵🇱" },
+  { name: "RU", href: "ru", flag: "🇷🇺" },
 ];
 
 export default function LanguageSwitcher() {
