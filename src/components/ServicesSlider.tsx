@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { useSearchParams } from "next/navigation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 
 // Define the structure of a service
 interface Service {

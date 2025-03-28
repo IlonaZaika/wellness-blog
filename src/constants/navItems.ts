@@ -19,7 +19,7 @@ export const serviceLinks = [
 ];
 
 export const languageLinks = [
-  { name: "EN", href: "/?lang=en", flag: "🇬🇧" },
-  { name: "UA", href: "/?lang=ua", flag: "🇺🇦" },
-  { name: "PL", href: "/?lang=pl", flag: "🇵🇱" },
+  { name: "EN", href: "/en", flag: "🇬🇧" },
+  { name: "UA", href: "/ua", flag: "🇺🇦" },
+  { name: "PL", href: "/pl", flag: "🇵🇱" },
 ];

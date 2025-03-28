@@ -1,6 +1,7 @@
-import Link from "next/link";
+"use client";
+import { Link } from "@/i18n/navigation";
 
-interface DropdownProps {
+interface NavDropdownProps {
   title: string;
   links: { name: string; href: string }[];
   isOpen: boolean;
@@ -8,13 +9,13 @@ interface DropdownProps {
   onMouseLeave: () => void;
 }
 
-const Dropdown: React.FC<DropdownProps> = ({
+export default function NavDropdown({
   title,
   links,
   isOpen,
   onMouseEnter,
   onMouseLeave,
-}) => {
+}: NavDropdownProps) {
   return (
     <li
       className="relative text-textGreen hover:text-accent cursor-pointer"
@@ -40,6 +41,4 @@ const Dropdown: React.FC<DropdownProps> = ({
       )}
     </li>
   );
-};
-
-export default Dropdown;
+}

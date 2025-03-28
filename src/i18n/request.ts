@@ -1,24 +1,20 @@
 import { getRequestConfig } from "next-intl/server";
 import { routing } from "./routing";
 
-// Type guard to check if locale is valid
-function isValidLocale(
-  locale: string
-): locale is (typeof routing.locales)[number] {
-  return routing.locales.includes(locale as (typeof routing.locales)[number]);
-}
-
 export default getRequestConfig(async ({ requestLocale }) => {
-  // This typically corresponds to the `[locale]` segment
-  let locale = await requestLocale;
+  // Typically corresponds to the `[locale]` segment
+  const requested = await requestLocale;
+  console.log(" requested locale", requested);
 
-  // Ensure that a valid locale is used
-  if (!locale || !isValidLocale(locale)) {
-    locale = routing.defaultLocale;
-  }
+  const locale = routing.locales.includes(
+    requested as (typeof routing.locales)[number]
+  )
+    ? requested
+    : routing.defaultLocale;
+  console.log(" final locale", locale);
 
   return {
     locale,
-    messages: (await import(`../../messages/${locale}.json`)).default,
+    messages: (await import(`@/messages/${locale}.json`)).default,
   };
 });

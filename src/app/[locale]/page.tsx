@@ -18,12 +18,11 @@ export default function Home() {
         <div className="mx-auto flex flex-col justify-center items-center md:flex-row gap-8 lg:max-w-6xl">
           <Image
             src="/hero-img.jpg"
-            alt={t("hero.img_hero_alt")}
+            alt={"Massage therapist in Edinburg"}
             className="hidden md:block rounded-lg"
             width={400}
             height={400}
             priority
-            style={{ width: "auto", height: "auto" }}
           />
           <div className="text-center md:text-left">
             <h3 className="h3-custom">

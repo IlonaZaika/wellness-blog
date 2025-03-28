@@ -1,4 +1,7 @@
+"use client";
 import { useState } from "react";
+import { Link } from "@/i18n/navigation";
+import { usePathname } from "next/navigation";
 
 interface LanguageLink {
   name: string;
@@ -7,15 +10,17 @@ interface LanguageLink {
 }
 
 const languageLinks: LanguageLink[] = [
-  { name: "EN", href: "/?lang=en", flag: "🇬🇧" },
-  { name: "UA", href: "/?lang=ua", flag: "🇺🇦" },
-  { name: "PL", href: "/?lang=pl", flag: "🇵🇱" },
+  { name: "EN", href: "en", flag: "🇬🇧" },
+  { name: "UA", href: "ua", flag: "🇺🇦" },
+  { name: "PL", href: "pl", flag: "🇵🇱" },
 ];
 
 export default function LanguageSwitcher() {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [currentLanguage, setCurrentLanguage] = useState<LanguageLink>(
-    languageLinks[0]
+    languageLinks.find((lang) => lang.href === pathname.split("/")[1]) ||
+      languageLinks[0]
   );
 
   const toggleDropdown = (isOpen: boolean) => setIsOpen(isOpen);
@@ -44,12 +49,14 @@ export default function LanguageSwitcher() {
         >
           {languageLinks.map((lang) => (
             <li key={lang.name} className="py-2 nav-link px-4">
-              <button
+              <Link
+                href="/"
+                locale={lang.href}
                 className="flex items-center gap-2 w-full text-left"
                 onClick={() => handleLanguageChange(lang)}
               >
                 <span className="text-lg">{lang.flag}</span> {lang.name}
-              </button>
+              </Link>
             </li>
           ))}
         </ul>

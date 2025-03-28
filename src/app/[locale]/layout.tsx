@@ -4,7 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 
@@ -21,6 +21,9 @@ function isValidLocale(
   locale: string
 ): locale is (typeof routing.locales)[number] {
   return routing.locales.includes(locale as (typeof routing.locales)[number]); // Explicit cast for safety
+}
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
 }
 
 export default async function LocaleLayout({
@@ -41,6 +44,9 @@ export default async function LocaleLayout({
   if (!routing.locales.includes(locale)) {
     notFound();
   }
+
+  // Enable static rendering
+  setRequestLocale(locale);
 
   // Providing all messages to the client
   // side is the easiest way to get started
