@@ -1,6 +1,7 @@
 export interface CardProps {
   id: string;
   imageUrl?: string;
+  imageAlt?: string;
   setPreviewImage?: (src: string | null) => void;
 }
 

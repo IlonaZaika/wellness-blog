@@ -92,10 +92,26 @@ h6 {
 }
 
 .section-spacing {
-  @apply px-4 py-6 md:p-16 lg:py-28 lg:px-52;
+  @apply px-4 py-6 md:p-16 lg:px-32 lg:py-28;
 }
 
 .swiper-pagination {
   position: relative !important;
   margin-top: 18px; /* Adjust this value as needed */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 6s ease infinite;
 }

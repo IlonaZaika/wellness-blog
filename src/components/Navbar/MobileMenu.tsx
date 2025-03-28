@@ -92,7 +92,11 @@ export default function MobileMenu() {
               key={index}
               className="flex justify-center p-1 text-md font-inter gap-x-2 text-textGreen hover:text-accent"
             >
-              <Link href={item.href} className="flex items-center">
+              <Link
+                href={item.href}
+                className="flex items-center"
+                onClick={toggleMobileMenu}
+              >
                 {item.name}
               </Link>
             </li>

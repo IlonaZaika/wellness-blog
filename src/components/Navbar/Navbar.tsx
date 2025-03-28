@@ -13,7 +13,11 @@ export default function Navbar() {
   });
 
   const pathname = usePathname();
-  const isHome = pathname === "/en";
+  const isHome =
+    pathname === "/en" ||
+    pathname === "/ua" ||
+    pathname === "/pl" ||
+    pathname === "/ru";
 
   useEffect(() => {
     const checkScroll = () => {

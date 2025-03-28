@@ -24,7 +24,7 @@ export default function About() {
       {/* About Me Section */}
       <section className="bg-bgBase flex justify-center section-spacing">
         <div className="flex flex-col md:flex-row br-bgBase items-center max-w-6xl w-full">
-          <div className="p-sm md:w-1/2 mx-auto text-center md:text-left mr-8">
+          <div className="p-sm md:w-1/2 mx-auto text-center md:text-left md:mr-8">
             <SectionHeadline
               title={t("aboutMe.title")}
               subTitle={t("aboutMe.subtitle")}
