@@ -10,10 +10,24 @@ export default function Contact() {
   const t = useTranslations("ContactPage");
 
   return (
-    <div className="mt-16">
-      <section className="p-sm md:p-md lg:px-lg ">
-        <div className="flex flex-col md:flex-row md:space-x-6 justify-center">
-          <div className="bg-bgBase text-textGrey p-10 rounded-lg flex items-center">
+    <div className="mt-12">
+      <section className="flex flex-col bg-gradient-to-r from-green-50 via-cyan-50 to-green-100 animate-gradient px-4 py-20 md:p-16 lg:px-32 lg:py-36">
+        <div className="mx-auto lg:max-w-xl">
+          <h2 className="h2-custom text-center">
+            {t("get_in_touch.headline")}
+          </h2>
+          <p className="p-custom text-center">
+            <strong className="py-4">
+              {t("get_in_touch.whatsapp_message")}
+            </strong>
+            <br />
+            {t("get_in_touch.regular_message")}
+          </p>
+        </div>
+      </section>
+      <section className="px-4 py-4 md:p-8 lg:p-20">
+        <div className="flex flex-col gap-6 md:flex-row md:space-x-2 justify-center ">
+          <div className="bg-bgBase text-textGrey p-10 rounded-lg flex items-center order-2 md:order-1">
             <div>
               <div className="flex items-start space-x-4 py-4">
                 <FaMapMarkerAlt className="text-accent text-2xl" />
@@ -57,10 +71,8 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <div>
-            <h2 className="h2-custom text-center md:text-left">
-              {t("contact_form.title")}
-            </h2>
+          <div className="order-1 md:order-2">
+            <h2 className="h2-custom text-center">{t("contact_form.title")}</h2>
 
             <form className="font-inter font-light text-white text-[13px]">
               <input

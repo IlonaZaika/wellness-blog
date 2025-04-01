@@ -127,7 +127,7 @@ const ServicesSlider = () => {
             key={category}
             onClick={() => setActiveTab(category)}
             className={`px-3 py-2 text-textGreen font-light font-heading text-lg outline-none ${
-              activeTab === category ? "bg-btnHoveredGreen rounded-xl" : ""
+              activeTab === category ? "bg-bgGreen rounded-xl" : ""
             }`}
           >
             {category}

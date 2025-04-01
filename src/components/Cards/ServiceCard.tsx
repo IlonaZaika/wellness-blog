@@ -42,7 +42,7 @@ function ServiceCard({
           href="#"
           variant="secondary"
           label={callToAction}
-          className="bg-white block rounded-2xl w-3/4 text-center hover:bg-accent hover:text-white"
+          className="bg-white block rounded-2xl w-3/4 text-center "
         />
       </div>
     </div>

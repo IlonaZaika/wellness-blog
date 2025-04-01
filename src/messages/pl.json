@@ -126,6 +126,11 @@
     }
   },
   "ContactPage": {
+    "get_in_touch": {
+      "headline": "Skontaktuj się z nami!",
+      "whatsapp_message": "Możesz skontaktować się z nami bezpośrednio przez WhatsApp pod numerem +44 5656 655656.",
+      "regular_message": "Masz pytania lub specjalne prośby? Jesteśmy tutaj, aby pomóc! Wypełnij poniższy formularz, a skontaktujemy się z Tobą tak szybko, jak to możliwe."
+    },
     "address": {
       "title": "Adres",
       "content": "A108 Adam Street, Nowy Jork, NY 535022"

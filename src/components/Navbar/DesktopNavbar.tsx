@@ -53,7 +53,7 @@ export default function DesktopNavbar() {
       {/* Right side (Buttons) */}
       <div className="flex justify-end w-1/3">
         {/* Language Switcher with Hover Animation */}
-        <div className="relative flex items-center justify-center text-textGreen rounded-lg hover:bg-btnHoveredGreen transition-all duration-300 ease-in-out">
+        <div className="relative flex items-center justify-center text-textGreen rounded-lg hover:bg-bgGreen transition-all duration-300 ease-in-out">
           <LanguageSwitcher />
         </div>
       </div>

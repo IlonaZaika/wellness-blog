@@ -14,10 +14,11 @@ export default function Home() {
 
   return (
     <div>
+      {/* Hero Section */}
+
       <section className="relative overflow-hidden bg-gradient-to-r from-green-50 via-cyan-50 to-green-100 animate-gradient px-5 pt-20 pb-6 lg:p-32">
         <div className="absolute inset-0 bg-noise opacity-20"></div>
         <div className="relative flex flex-col md:flex-row gap-8 lg:max-w-6xl mx-auto">
-          {/* Hero Section */}
           <div className="mx-auto flex flex-col justify-center items-center md:flex-row gap-8 lg:max-w-6xl">
             <Image
               src="/hero-img.jpg"
@@ -70,7 +71,7 @@ export default function Home() {
       </section>
 
       {/* Symptoms Section */}
-      <section className="px-4 py-6 md:pt-16 lg:pt-28">
+      <section className="section-spacing">
         <div className="mx-auto lg:max-w-6xl">
           <SectionHeadline
             title={t("problem.headline")}
@@ -115,7 +116,7 @@ export default function Home() {
         </div>
       </section>
       {/* Offer Section */}
-      <section className="section-spacing">
+      <section className="section-spacing bg-bgBase">
         <div className="mx-auto lg:max-w-6xl">
           <SectionHeadline
             title={t("services.headline")}

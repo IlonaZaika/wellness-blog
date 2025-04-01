@@ -9,7 +9,7 @@ function OfferItemCard({
   description,
 }: OfferItemCardProps) {
   return (
-    <div className="bg-bgBase rounded-lg overflow-hidden">
+    <div className="bg-white rounded-xl overflow-hidden">
       <div className="relative w-full h-56">
         <Image
           src={imageUrl}
