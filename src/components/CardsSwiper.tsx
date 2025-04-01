@@ -27,12 +27,12 @@ export default function CardsSwiper<T extends CardProps>({
     <div className="py-6 flex flex-col items-center w-full">
       <Swiper
         modules={[Navigation, Pagination]}
-        spaceBetween={8}
+        spaceBetween={24}
         slidesPerView={1}
         breakpoints={{
           640: { slidesPerView: 2 },
           710: { slidesPerView: 3 },
-          1536: { slidesPerView: 4 },
+          1536: { slidesPerView: 3 },
         }}
         navigation={{
           prevEl: ".prev-btn",
@@ -42,7 +42,7 @@ export default function CardsSwiper<T extends CardProps>({
         className="w-full"
       >
         {cards.map((card, index) => (
-          <SwiperSlide key={index} className="cursor-pointer">
+          <SwiperSlide key={index} className="cursor-pointer p-6">
             {hasPreviewModal ? (
               <div
                 onClick={() =>

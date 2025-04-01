@@ -154,5 +154,9 @@
         "submit_button": "Wyślij Wiadomość"
       }
     }
+  },
+  "ServicesPage": {
+    "headline": "Usługi wellness",
+    "subtitle": "od 20£"
   }
 }

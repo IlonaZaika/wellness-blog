@@ -27,3 +27,14 @@ export interface OfferItemCardProps extends CardProps {
 export interface SymptomCardProps extends CardProps {
   symptomName: string;
 }
+
+export interface ServiceCardProps extends CardProps {
+  title: string;
+  imageUrl: string;
+  imageAlt: string;
+  description: string;
+  duration: string;
+  price: number;
+  bookingUrl: string;
+  callToAction: string;
+}

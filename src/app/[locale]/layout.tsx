@@ -60,7 +60,7 @@ export default async function LocaleLayout({
       <body className={`${rokkitt.className}`}>
         <NextIntlClientProvider messages={messages}>
           <Navbar />
-          <main>{children}</main>
+          <main className="min-h-screen">{children}</main>
           <Footer />
         </NextIntlClientProvider>
       </body>

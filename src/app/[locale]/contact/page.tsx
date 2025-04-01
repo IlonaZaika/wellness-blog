@@ -10,7 +10,7 @@ export default function Contact() {
   const t = useTranslations("ContactPage");
 
   return (
-    <div className="min-h-auto mt-16">
+    <div className="mt-16">
       <section className="p-sm md:p-md lg:px-lg ">
         <div className="flex flex-col md:flex-row md:space-x-6 justify-center">
           <div className="bg-bgBase text-textGrey p-10 rounded-lg flex items-center">

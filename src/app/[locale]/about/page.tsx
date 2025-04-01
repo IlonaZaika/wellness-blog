@@ -9,10 +9,10 @@ export default function About() {
   const qualificationsItems = t.raw("qualifications.items");
 
   return (
-    <div className="min-h-screen mt-12">
+    <div className="mt-12">
       {/* Our Mission Section */}
       <section className="flex justify-center bg-accent section-spacing">
-        <div className="px-6 md:w-3/5 pb-16 pt-10">
+        <div className="mx-auto lg:max-w-4xl">
           <h2 className="h2-custom text-white text-center">
             {t("ourMission.title")}
           </h2>
@@ -23,7 +23,7 @@ export default function About() {
       </section>
       {/* About Me Section */}
       <section className="bg-bgBase flex justify-center section-spacing">
-        <div className="flex flex-col md:flex-row br-bgBase items-center max-w-6xl w-full">
+        <div className="flex flex-col md:flex-row br-bgBase items-center mx-auto lg:max-w-6xl">
           <div className="p-sm md:w-1/2 mx-auto text-center md:text-left md:mr-8">
             <SectionHeadline
               title={t("aboutMe.title")}
@@ -46,7 +46,7 @@ export default function About() {
 
       {/* Qualifications Section */}
       <section className="section-spacing ">
-        <div className="lg:gap-5">
+        <div className="mx-auto lg:max-w-6xl lg:gap-5">
           <SectionHeadline
             title={t("qualifications.title")}
             subTitle={t("qualifications.subtitle")}
@@ -66,7 +66,7 @@ export default function About() {
                 )
               )}
             </div>
-            <div className="relative w-full h-96 overflow-hidden">
+            <div className="relative w-full h-96 overflow-hidden items-center">
               <Certifications />
             </div>
           </div>

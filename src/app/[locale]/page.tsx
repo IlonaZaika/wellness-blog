@@ -70,7 +70,7 @@ export default function Home() {
       </section>
 
       {/* Symptoms Section */}
-      <section className="bg-bgBase section-spacing">
+      <section className="px-4 py-6 md:pt-16 lg:pt-28">
         <div className="mx-auto lg:max-w-6xl">
           <SectionHeadline
             title={t("problem.headline")}

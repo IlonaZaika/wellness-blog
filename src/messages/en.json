@@ -154,5 +154,9 @@
         "submit_button": "Send Message"
       }
     }
+  },
+  "ServicesPage": {
+    "headline": "Wellness Services",
+    "subtitle": "from 20£"
   }
 }
