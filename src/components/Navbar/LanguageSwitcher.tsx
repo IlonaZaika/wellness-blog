@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Link } from "@/i18n/navigation";
 import { usePathname } from "next/navigation";
+import { FiChevronDown } from "react-icons/fi";
 
 interface LanguageLink {
   name: string;
@@ -38,7 +39,8 @@ export default function LanguageSwitcher() {
         className="flex items-center gap-2 nav-link text-sm"
         onClick={() => toggleDropdown(!isOpen)}
       >
-        <span className="text-lg">{currentLanguage.flag} ▾</span>
+        <span className="text-lg">{currentLanguage.flag}</span>
+        <FiChevronDown className="ml-auto" />
       </button>
 
       {/* Dropdown Menu */}
