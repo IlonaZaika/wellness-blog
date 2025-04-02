@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import MobileMenu from "./MobileMenu";
+import Sidebar from "./Sidebar";
 import { usePathname } from "next/navigation";
 import DesktopNavbar from "./DesktopNavbar";
 
@@ -34,12 +34,12 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 w-full max-w-screen px-4 py-2 z-50 lg:px-12 transition-colors duration-300 ${
         isHome && !menuState.isScrolled
-          ? "bg-transparent border border-b-white"
+          ? "bg-transparent"
           : "bg-white border border-b-accent"
       }`}
     >
       <DesktopNavbar />
-      <MobileMenu />
+      <Sidebar />
     </nav>
   );
 }
