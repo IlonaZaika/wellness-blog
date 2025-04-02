@@ -22,13 +22,13 @@ export default function Sidebar() {
       <div className="lg:hidden">
         <div className="flex justify-between items-center w-full">
           <button
-            className="relative h-10 w-10 rounded-full text-textGreen hover:bg-btnHoveredGreen"
+            className="relative h-10 w-10 rounded-full text-textGreen hover:bg-bgGreen"
             onClick={toggleMobileMenu}
             type="button"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-6 h-6"
+              className="w-6 h-6 ml-2"
               fill="none"
               stroke="currentColor"
               strokeWidth="2"
@@ -46,7 +46,7 @@ export default function Sidebar() {
           >
             WELLNESS STUDIO
           </Link>
-          <button className="relative w-9 h-9 p-2 flex items-center justify-center rounded-full text-textGreen hover:bg-btnHoveredGreen">
+          <button className="relative w-9 h-9 p-2 flex items-center justify-center rounded-full text-textGreen hover:bg-bgGreen">
             <FaPhoneAlt size={20} />
           </button>
         </div>
