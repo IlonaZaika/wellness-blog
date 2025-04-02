@@ -43,19 +43,19 @@
     "services": {
       "headline": "Dostosowane do Twoich potrzeb",
       "subtitle": "Usługi",
-      "service1": {
+      "massage_therapy": {
         "name": "Terapia masażem",
         "description": "Złagodź ból, zmniejsz stres i przywróć równowagę dzięki profesjonalnej terapii masażem. Niezależnie od tego, czy szukasz głębokiego relaksu, ulgi w bólu czy korekcji postawy, nasze indywidualnie dopasowane zabiegi – w tym masaż całego ciała, gorącymi kamieniami, drenaż limfatyczny i masaż przeciwstarzeniowy – pomogą Ci poczuć się jak najlepiej.",
         "imageUrl": "/massage.jpg",
         "img_service_alt": "Profesjonalna terapia masażem w celu złagodzenia bólu, redukcji stresu i korekcji postawy. Masaż całego ciała, gorącymi kamieniami, drenaż limfatyczny i przeciwstarzeniowe zabiegi masażu dla głębokiego relaksu i dobrego samopoczucia."
       },
-      "service2": {
+      "posture_correction": {
         "name": "Indywidualne sesje",
         "description": "Nasze spersonalizowane sesje korekcji postawy koncentrują się na identyfikacji zaburzeń równowagi, poprawie ustawienia ciała i przywracaniu mobilności. Korzystając z terapii masażem oraz technik ruchowych, tworzymy indywidualny plan, który pomoże Ci poruszać się bez bólu.",
         "imageUrl": "/individual-training.jpg",
         "img_service_alt": "Indywidualne sesje korekcji postawy w celu poprawy ustawienia ciała, przywrócenia mobilności i złagodzenia bólu. Dopasowana terapia masażem i techniki ruchowe dla lepszej postawy i swobodnego poruszania się bez bólu."
       },
-      "service3": {
+      "nordic_walking_groups": {
         "name": "Grupowe zajęcia Nordic Walking",
         "description": "Popraw swoją postawę, siłę i wytrzymałość dzięki Nordic Walking – treningowi angażującemu 90% mięśni całego ciała. To mało obciążające, ale bardzo skuteczne ćwiczenie jest idealne dla osób w każdym wieku, wspomagając zdrowie serca, spalanie kalorii i poprawę mobilności stawów. Dodatkowo to świetna okazja do poznania nowych ludzi i spędzania czasu na świeżym powietrzu.",
         "imageUrl": "/group-training.jpg",
@@ -119,10 +119,10 @@
         }
       ]
     },
-    "testimonials": {
-      "title": "Co Mówią Nasi Klienci",
-      "subtitle": "Opinie",
-      "description": "Hear from our clients and discover how our personalized wellness approach has improved their lives."
+    "faq": {
+      "title": "FAQ – Najczęściej zadawane pytania",
+      "subtitle": "",
+      "description": "Masz pytania? Sprawdź nasze najczęściej zadawane pytania poniżej. Jeśli nie znajdziesz tego, czego szukasz, skontaktuj się z nami!"
     }
   },
   "ContactPage": {
@@ -163,5 +163,25 @@
   "ServicesPage": {
     "headline": "Usługi wellness",
     "subtitle": "od 20£"
+  },
+  "FaqPage": {
+    "title": "FAQ – Najczęściej zadawane pytania",
+    "subtitle": "",
+    "description": "Masz pytania? Sprawdź nasze najczęściej zadawane pytania poniżej. Jeśli nie znajdziesz tego, czego szukasz, skontaktuj się z nami!",
+    "cta_final": {
+      "headline": "MASZ JESZCZE PYTANIA?",
+      "description": "Jeśli nie znalazłeś odpowiedzi, której szukałeś, jesteśmy tutaj, aby pomóc! Skontaktuj się z nami bezpośrednio, a chętnie pomożemy Ci w rozwiązaniu wszelkich dodatkowych pytań lub wątpliwości.",
+      "cta_contact": "Skontaktuj się z nami"
+    }
+  },
+  "NavBar": {
+    "home": "Strona główna",
+    "about": "O nas",
+    "contact": "Kontakt",
+    "services": "Usługi",
+    "massage_therapy": "Terapia masażu",
+    "facial_treatments": "Zabiegi na twarz",
+    "posture_correction": "Korekta postawy",
+    "nordic_walking_groups": "Grupy nordic walking"
   }
 }

@@ -43,19 +43,19 @@
     "services": {
       "headline": "Tailored to fit your needs",
       "subtitle": "Services",
-      "service1": {
+      "massage_therapy": {
         "name": "Massage Therapy",
         "description": "Relieve pain, reduce stress, and restore balance with expert massage therapy. Whether you're looking for deep relaxation, pain relief, or posture correction, our tailored treatments—including full body, hot stone, lymphatic drainage, and anti-aging massage—help you feel your best.",
         "imageUrl": "/massage.jpg",
         "img_service_alt": "Professional massage therapy for pain relief, stress reduction, and posture correction. Full body, hot stone, lymphatic drainage, and anti-aging massage treatments for deep relaxation and well-being."
       },
-      "service2": {
+      "posture_correction": {
         "name": "Personalized Sessions",
         "description": "Our personalized posture correction sessions focus on identifying imbalances, improving alignment, and restoring mobility. Using massage therapy and movement-based techniques, we create a tailored plan to help you move pain-free.",
         "imageUrl": "/individual-training.jpg",
         "img_service_alt": "Personalized posture correction sessions to improve alignment, restore mobility, and relieve pain. Tailored massage therapy and movement-based techniques for better posture and pain-free movement."
       },
-      "service3": {
+      "nordic_walking_groups": {
         "name": "Nordic Walking Groups",
         "description": "Improve your posture, strength, and endurance with Nordic walking, a full-body workout that engages 90% of your muscles. This low-impact yet highly effective exercise is perfect for all ages, helping to improve cardiovascular health, burn calories, and enhance joint mobility. Plus, it's a great way to meet new people and enjoy the outdoors.",
         "imageUrl": "/group-training.jpg",
@@ -119,10 +119,10 @@
         }
       ]
     },
-    "testimonials": {
-      "title": "What Our Customers Say",
-      "subtitle": "Testimonials",
-      "description": "Hear from our clients and discover how our personalized wellness approach has improved their lives."
+    "faq": {
+      "title": "FAQ'S",
+      "subtitle": "",
+      "description": "Got questions? Check out our frequently asked questions below. If you don’t find what you’re looking for, feel free to reach out!"
     }
   },
   "ContactPage": {
@@ -163,5 +163,25 @@
   "ServicesPage": {
     "headline": "Wellness Services",
     "subtitle": "from 20£"
+  },
+  "FaqPage": {
+    "title": "FAQ'S",
+    "subtitle": "",
+    "description": "Got questions? Check out our frequently asked questions below. If you don’t find what you’re looking for, feel free to reach out!",
+    "cta_final": {
+      "headline": "STILL GOT QUESTIONS?",
+      "description": "If you didn’t find the answer you were looking for, we are here to help! Reach out to us directly, and we’ll be happy to assist you with any additional questions or concerns.",
+      "cta_contact": "Contact Us"
+    }
+  },
+  "NavBar": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "services": "Services",
+    "massage_therapy": "Massage Therapy",
+    "facial_treatments": "Facial Treatments",
+    "posture_correction": "Posture Correction",
+    "nordic_walking_groups": "Nordic Walking Groups"
   }
 }

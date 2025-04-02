@@ -27,7 +27,7 @@ export default function Contact() {
       </section>
       <section className="px-4 py-4 md:p-8 lg:p-20">
         <div className="flex flex-col gap-6 md:flex-row md:space-x-2 justify-center ">
-          <div className="bg-bgBase text-textGrey p-10 rounded-lg flex items-center order-2 md:order-1">
+          <div className="bg-bgBase text-textGrey p-10 rounded-2xl flex items-center order-2 md:order-1">
             <div>
               <div className="flex items-start space-x-4 py-4">
                 <FaMapMarkerAlt className="text-accent text-2xl" />

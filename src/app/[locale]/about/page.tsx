@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Testimonials from "@/components/Testimonials";
 import { useTranslations } from "next-intl";
 import SectionHeadline from "@/components/SectionHeadline";
 import Certifications from "@/components/Certifications";
+import FAQ from "@/components/FAQ";
 
 export default function About() {
   const t = useTranslations("AboutPage");
@@ -12,7 +12,7 @@ export default function About() {
     <div className="mt-12">
       {/* Our Mission Section */}
       <section className="flex justify-center bg-accent section-spacing">
-        <div className="mx-auto lg:max-w-4xl">
+        <div className="px-sm mx-auto md:max-w-2xl lg:max-w-4xl">
           <h2 className="h2-custom text-white text-center">
             {t("ourMission.title")}
           </h2>
@@ -24,7 +24,7 @@ export default function About() {
       {/* About Me Section */}
       <section className="bg-bgBase flex justify-center section-spacing">
         <div className="flex flex-col md:flex-row br-bgBase items-center mx-auto lg:max-w-6xl">
-          <div className="p-sm md:w-1/2 mx-auto text-center md:text-left md:mr-8">
+          <div className=" md:w-1/2 mx-auto text-center md:text-left md:mr-8">
             <SectionHeadline
               title={t("aboutMe.title")}
               subTitle={t("aboutMe.subtitle")}
@@ -52,8 +52,8 @@ export default function About() {
             subTitle={t("qualifications.subtitle")}
           />
 
-          <div className="flex flex-col items-center">
-            <div className="pb-8">
+          <div className="px-2 flex flex-col items-center">
+            <div>
               {qualificationsItems.map(
                 (
                   item: { name: string; description: string },
@@ -66,20 +66,21 @@ export default function About() {
                 )
               )}
             </div>
-            <div className="relative w-full h-96 overflow-hidden items-center">
+            <div className="relative w-full h-auto overflow-hidden items-center">
               <Certifications />
             </div>
           </div>
         </div>
       </section>
-      {/* Testimonials Section */}
+      {/* FAQ Section */}
       <section className="bg-bgBase section-spacing">
-        <SectionHeadline
-          title={t("testimonials.title")}
-          subTitle={t("testimonials.subtitle")}
-        />
-        <p className="p-custom">{t("testimonials.description")}</p>
-        <Testimonials />
+        <div className="mx-auto lg:max-w-3xl">
+          <h2 className="h2-custom text-center">{t("faq.title")}</h2>
+          <p className="p-custom text-center pb-8 md:pb-12">
+            {t("faq.description")}
+          </p>
+        </div>
+        <FAQ />
       </section>
     </div>
   );

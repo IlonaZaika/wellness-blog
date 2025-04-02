@@ -5,17 +5,20 @@ export interface NavItem {
 }
 
 export const navItems: NavItem[] = [
-  { name: "Home", href: "/" },
-  { name: "Services", href: "/services", hasServicesInside: true },
-  { name: "About", href: "/about" },
-  { name: "Contact", href: "/contact" },
+  { name: "home", href: "/" },
+  { name: "services", href: "/services", hasServicesInside: true },
+  { name: "about", href: "/about" },
+  { name: "contact", href: "/contact" },
 ];
 
 export const serviceLinks = [
-  { name: "Massage Therapy", href: "/services?category=Massage" },
-  { name: "Anti-Aging Treatments", href: "/services?category=Facial" },
-  { name: "Posture Correction", href: "/services/posture" },
-  { name: "Nordic Walking Groups", href: "/services/nordic-walking" },
+  { name: "massage_therapy", href: "/services?category=massage_therapy" },
+  { name: "facial_treatments", href: "/services?category=facial_treatments" },
+  { name: "posture_correction", href: "/services?category=posture_correction" },
+  {
+    name: "nordic_walking_groups",
+    href: "/services?category=nordic_walking_groups",
+  },
 ];
 
 export const languageLinks = [

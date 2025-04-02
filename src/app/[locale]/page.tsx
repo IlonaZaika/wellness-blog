@@ -6,11 +6,23 @@ import SectionHeadline from "@/components/SectionHeadline";
 import OfferItemCard from "@/components/Cards/OfferItemCard";
 import SymptomCard from "@/components/Cards/SymptomCard";
 import ImageSwiper from "@/components/ImageSwiper";
+import { navItems, serviceLinks } from "@/constants/navItems";
 
 export default function Home() {
   const t = useTranslations("HomePage");
-  const serviceKeys = ["service1", "service2", "service3"];
+  const serviceKeys = [
+    "massage_therapy",
+    "posture_correction",
+    "nordic_walking_groups",
+  ];
   const symptomKeys = ["symptom1", "symptom2", "symptom3", "symptom4"];
+  const servicesHref =
+    navItems.find((item) => item.name === "services")?.href || "";
+  const joinNordicWalkingGroupHref =
+    serviceLinks.find((item) => item.name === "nordic_walking_groups")?.href ||
+    "";
+  const contactHref =
+    navItems.find((item) => item.name === "contact")?.href || "";
 
   return (
     <div>
@@ -54,12 +66,12 @@ export default function Home() {
               </div>
               <div className="my-6 flex flex-row gap-3">
                 <ActionButton
-                  href="#"
+                  href={servicesHref}
                   variant="primary"
                   label={t("hero.cta_book")}
                 />
                 <ActionButton
-                  href="#"
+                  href={joinNordicWalkingGroupHref}
                   variant="secondary"
                   label={t("hero.cta_join")}
                   className="bg-white"
@@ -104,7 +116,7 @@ export default function Home() {
                 </h4>
                 <div className="my-6 flex justify-center">
                   <ActionButton
-                    href="#"
+                    href={contactHref}
                     variant="secondary"
                     label={t("problem.cta_book_consultation")}
                     className="bg-white"
@@ -126,7 +138,10 @@ export default function Home() {
             {serviceKeys.map((key, index) => (
               <OfferItemCard
                 key={index}
-                id={""}
+                id={key}
+                link={
+                  serviceLinks.find((item) => item.name === key)?.href || ""
+                }
                 title={t(`services.${key}.name`)}
                 imageUrl={t(`services.${key}.imageUrl`)}
                 imageAlt={t(`services.${key}.img_service_alt`)}
@@ -162,7 +177,7 @@ export default function Home() {
               {t("cta_final.headline")}
             </h2>
             <ActionButton
-              href="#"
+              href={servicesHref}
               variant="primary"
               label={t("cta_final.cta_book")}
             />

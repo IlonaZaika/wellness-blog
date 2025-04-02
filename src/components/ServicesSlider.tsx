@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { useSearchParams } from "next/navigation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import ServiceCard from "./Cards/ServiceCard";
+import { useTranslations } from "next-intl";
 
 // Define the structure of a service
 interface Service {
@@ -14,7 +15,7 @@ interface Service {
 
 // Define the services object with proper typing
 const services: Record<string, Service[]> = {
-  Relaxation: [
+  massage_therapy: [
     {
       name: "Swedish Massage",
       price: 100,
@@ -65,7 +66,7 @@ const services: Record<string, Service[]> = {
       description: "Combines yoga, acupressure...",
     },
   ],
-  "Facial Care": [
+  facial_treatments: [
     {
       name: "Classic Facial1",
       price: 80,
@@ -73,7 +74,7 @@ const services: Record<string, Service[]> = {
       description: "A rejuvenating facial...",
     },
   ],
-  Therapeutic: [
+  posture_correction: [
     {
       name: "Classic Facial",
       price: 80,
@@ -81,15 +82,7 @@ const services: Record<string, Service[]> = {
       description: "A rejuvenating facial...",
     },
   ],
-  Mobility: [
-    {
-      name: "Classic Facial",
-      price: 80,
-      duration: "45 min",
-      description: "A rejuvenating facial...",
-    },
-  ],
-  "Group Trainings": [
+  nordic_walking_groups: [
     {
       name: "Classic Facial",
       price: 80,
@@ -100,8 +93,10 @@ const services: Record<string, Service[]> = {
 };
 
 const ServicesSlider = () => {
+  const t = useTranslations("NavBar");
+
   const [activeTab, setActiveTab] =
-    useState<keyof typeof services>("Relaxation");
+    useState<keyof typeof services>("massage_therapy");
   const sliderRef = useRef<HTMLDivElement>(null);
   const searchParams = useSearchParams();
 
@@ -130,7 +125,7 @@ const ServicesSlider = () => {
               activeTab === category ? "bg-bgGreen rounded-xl" : ""
             }`}
           >
-            {category}
+            {t(category)}
           </button>
         ))}
       </div>

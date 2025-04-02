@@ -21,7 +21,7 @@ export default function NavDropdown({
       className="relative text-textGreen hover:text-accent cursor-pointer"
       onMouseEnter={onMouseEnter}
     >
-      <Link href="#" className="inline-block">
+      <Link href={links[0].href} className="inline-block">
         {title} ▾
       </Link>
       {isOpen && (

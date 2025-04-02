@@ -4,8 +4,11 @@ import { navItems, serviceLinks } from "@/constants/navItems";
 import { useState } from "react";
 import Dropdown from "./Dropdown";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { useTranslations } from "next-intl";
 
 export default function DesktopNavbar() {
+  const t = useTranslations("NavBar");
+
   const [menuState, setMenuState] = useState({
     isScrolled: false,
     isServicesOpen: false,
@@ -23,8 +26,11 @@ export default function DesktopNavbar() {
           item.hasServicesInside ? (
             <Dropdown
               key={index}
-              title="Services"
-              links={serviceLinks}
+              title={t(item.name)}
+              links={serviceLinks.map((link) => ({
+                name: t(link.name),
+                href: link.href,
+              }))}
               isOpen={menuState.isServicesOpen}
               onMouseEnter={() => toggleDropdown("isServicesOpen", true)}
               onMouseLeave={() => toggleDropdown("isServicesOpen", false)}
@@ -35,7 +41,7 @@ export default function DesktopNavbar() {
               className="text-textGreen hover:text-accent cursor-pointer"
             >
               <Link href={item.href} className="flex items-center">
-                {item.name}
+                {t(item.name)}
               </Link>
             </li>
           )

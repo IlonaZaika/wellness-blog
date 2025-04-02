@@ -97,7 +97,7 @@ h6 {
 
 .swiper-pagination {
   position: relative !important;
-  margin-top: 18px; /* Adjust this value as needed */
+  padding-top: 5px !important; /* Moves pagination down */
 }
 
 @keyframes gradient {

@@ -3,8 +3,8 @@ import { Link } from "@/i18n/navigation";
 
 const Footer = () => {
   return (
-    <footer className="bg-textGreen font-inter font-light text-white text-[13px] pt-12 pb-3">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-5 gap-8">
+    <footer className="bg-textGreen font-inter font-light text-white text-[13px] py-3">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8 p-6">
         <div className="md:col-span-2 grid grid-cols-1 md:pr-10">
           <div>
             <div className="mb-2">

@@ -1,13 +1,15 @@
 import React from "react";
 import Image from "next/image";
 import { OfferItemCardProps } from "@/types/cardTypes";
+import { Link } from "@/i18n/navigation";
 
 function OfferItemCard({
   title,
   imageUrl,
   imageAlt,
   description,
-}: OfferItemCardProps) {
+  link,
+}: OfferItemCardProps & { link: string }) {
   return (
     <div className="bg-white rounded-xl overflow-hidden">
       <div className="relative w-full h-56">
@@ -21,10 +23,12 @@ function OfferItemCard({
         />
       </div>
       <div className="p-4 md:px-6 md:pb-6">
-        <h4 className="h4-custom mt-4 font-medium text-textGrey text-center md:text-left">
-          {title}
+        <h4 className="h4-custom mt-4 font-medium text-textGrey text-center ">
+          <Link href={link} className="hover:text-accent">
+            {title}
+          </Link>
         </h4>
-        <p className="p-custom mt-2 text-center md:text-left">{description}</p>
+        <p className="p-custom mt-2 text-center ">{description}</p>
       </div>
     </div>
   );

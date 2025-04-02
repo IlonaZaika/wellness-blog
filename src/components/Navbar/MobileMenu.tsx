@@ -5,8 +5,11 @@ import { navItems } from "@/constants/navItems";
 import { useState } from "react";
 import { FaPhoneAlt } from "react-icons/fa"; // For Phone Icon
 import LanguageSwitcher from "./LanguageSwitcher";
+import { useTranslations } from "next-intl";
 
 export default function MobileMenu() {
+  const t = useTranslations("NavBar");
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -97,7 +100,7 @@ export default function MobileMenu() {
                 className="flex items-center"
                 onClick={toggleMobileMenu}
               >
-                {item.name}
+                {t(item.name)}
               </Link>
             </li>
           ))}

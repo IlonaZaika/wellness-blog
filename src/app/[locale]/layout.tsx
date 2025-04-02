@@ -57,7 +57,7 @@ export default async function LocaleLayout({
       <head lang="en" className={`${inter.className}`}>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body className={`${rokkitt.className}`}>
+      <body className={`${rokkitt.className} flex flex-col min-h-screen`}>
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           <main className="min-h-screen">{children}</main>
