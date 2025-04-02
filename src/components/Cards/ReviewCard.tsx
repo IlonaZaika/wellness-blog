@@ -27,7 +27,7 @@ function ReviewCard({ stars, text, date, company }: ReviewCardProps) {
   return (
     <div
       ref={cardRef}
-      className="review-card bg-white p-6 rounded-lg w-full flex flex-col justify-between shadow-md"
+      className="review-card bg-white p-6 rounded-2xl w-full flex flex-col justify-between shadow-md"
       style={{ height: maxHeight ? `${maxHeight}px` : "auto" }}
     >
       {/* Star Ratings */}
