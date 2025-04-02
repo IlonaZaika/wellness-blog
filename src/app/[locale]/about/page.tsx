@@ -31,7 +31,7 @@ export default function About() {
             />
             <p className="p-custom">{t("aboutMe.description")}</p>
             <br />
-            <p className="p-custom">{t("aboutMe.goodby")}</p>
+            <p className="p-custom mb-4">{t("aboutMe.goodby")}</p>
           </div>
           <div className="w-full relative md:w-1/2 min-h-[400px] md:min-h-[550px] lg:min-h-[650px]">
             <Image

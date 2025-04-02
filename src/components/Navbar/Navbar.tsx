@@ -35,7 +35,7 @@ export default function Navbar() {
       className={`fixed top-0 left-0 w-full max-w-screen px-4 py-2 z-50 lg:px-12 transition-colors duration-300 ${
         isHome && !menuState.isScrolled
           ? "bg-transparent"
-          : "bg-white border border-b-accent"
+          : "bg-white border-b border-b-accent"
       }`}
     >
       <DesktopNavbar />
